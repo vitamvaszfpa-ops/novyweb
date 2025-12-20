@@ -56,8 +56,8 @@ const MortgageCalculator = () => {
     const rate = parseNumber(interestRate);
     const years = parseNumber(loanTerm);
 
-    // DTSI pravidlo - max 45% z čistého příjmu na splátky
-    const maxMonthlyPayment = income * 0.45 - payments;
+    // DTSI pravidlo - max 50% z čistého příjmu na splátky
+    const maxMonthlyPayment = income * 0.5 - payments;
     setMaxPayment(Math.max(0, maxMonthlyPayment));
 
     // Výpočet maximální výše hypotéky
@@ -102,7 +102,7 @@ const MortgageCalculator = () => {
             Orientační hypoteční kalkulačka
           </DialogTitle>
           <p className="text-sm text-muted-foreground">
-            Výpočet dle příjmů, závazků a pravidla DTSI (orientačně).
+            Výpočet dle příjmů, závazků a pravidla DSTI (orientačně).
           </p>
         </DialogHeader>
 
