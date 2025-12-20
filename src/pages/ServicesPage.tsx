@@ -106,7 +106,7 @@ const services = [
     id: "penzijni-audit",
     icon: ClipboardCheck,
     title: "Penzijní audit",
-    description: "Na základě výstupu ILDP (Informativní list důchodového pojištění) z OSSZ uděláme detailní rozbor vaší pracovní historie. Zjistíme, které doby vám chybí, co je potřeba doložit, a spočítáme, jaký důchod byste měli mít v nároku.",
+    description: "Na základě výstupu I0LDP (Informativní list důchodového pojištění) z OSSZ uděláme detailní rozbor vaší pracovní historie. Zjistíme, které doby vám chybí, co je potřeba doložit, a spočítáme, jaký důchod byste měli mít v nároku.",
     benefits: [
       "Analýza výstupu ILDP z OSSZ",
       "Identifikace chybějících dob pojištění",
