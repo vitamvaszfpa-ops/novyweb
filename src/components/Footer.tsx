@@ -130,16 +130,20 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <address className="flex items-start gap-3 text-secondary-foreground/70 text-sm not-italic">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Havlíčkovo+nám.+152/4,+591+01+Žďár+nad+Sázavou,+Česká+republika" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-secondary-foreground/70 hover:text-primary transition-colors text-sm not-italic"
+                >
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Centrum města <br />
-                    
 Havlíčkovo nám. 152/4, 
 591 01 Žďár nad Sázavou,
                     <br />
                     Česká republika
                   </span>
-                </address>
+                </a>
               </li>
             </ul>
           </div>
