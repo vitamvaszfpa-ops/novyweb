@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+/* Global font consistency */
+* {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Light theme - clean and readable */
+    --background: 210 20% 96%;
+    --foreground: 220 25% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 18%;
+
+    /* ZFP Orange - Vibrant #ed6d05 */
+    --primary: 25 93% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 25 95% 55%;
+
+    /* Header/Footer dark - Authority */
+    --secondary: 225 20% 18%;
+    --secondary-foreground: 220 20% 92%;
+
+    /* Muted tones */
+    --muted: 210 15% 90%;
+    --muted-foreground: 220 20% 35%;
+
+    /* Accent - Warm Gold */
+    --accent: 38 75% 50%;
+    --accent-foreground: 220 25% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 85%;
+    --input: 220 15% 90%;
+    --ring: 25 93% 47%;
+
+    --radius: 0.75rem;
+
+    /* Text colors for light background */
+    --navy: 220 25% 18%;
+    --navy-light: 220 15% 35%;
+
+    /* Modern bubble/blob gradient background - light version */
+    --gradient-page: 
+      radial-gradient(ellipse 80% 50% at 20% 30%, hsl(25 50% 92% / 0.6) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 40% at 75% 20%, hsl(30 40% 94% / 0.5) 0%, transparent 45%),
+      radial-gradient(ellipse 70% 60% at 85% 70%, hsl(220 20% 92% / 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 45% at 10% 80%, hsl(225 18% 90% / 0.5) 0%, transparent 45%),
+      radial-gradient(ellipse 90% 70% at 50% 50%, hsl(25 30% 95% / 0.35) 0%, transparent 55%),
+      radial-gradient(ellipse 40% 35% at 60% 85%, hsl(28 35% 90% / 0.4) 0%, transparent 40%),
+      radial-gradient(ellipse 55% 50% at 30% 60%, hsl(0 0% 98% / 0.3) 0%, transparent 50%),
+      linear-gradient(180deg, hsl(210 20% 96%) 0%, hsl(220 18% 94%) 50%, hsl(210 20% 96%) 100%);
+    
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 15% 98%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(25 93% 47%) 0%, hsl(35 85% 52%) 100%);
+    
+    /* Header/Footer gradient - stays dark */
+    --gradient-header: hsl(225 20% 18%);
+    
+    --shadow-soft: 0 4px 20px -4px hsl(220 25% 20% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(220 25% 20% / 0.1);
+    --shadow-elevated: 0 20px 50px -15px hsl(220 25% 20% / 0.12);
+    --shadow-glow: 0 0 60px hsl(25 93% 47% / 0.12);
+    --shadow-glow-strong: 0 0 80px hsl(25 93% 47% / 0.18);
+
+    /* Sidebar - dark */
+    --sidebar-background: 225 20% 18%;
+    --sidebar-foreground: 220 20% 92%;
+    --sidebar-primary: 25 93% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 225 18% 22%;
+    --sidebar-accent-foreground: 220 20% 92%;
+    --sidebar-border: 225 18% 28%;
+    --sidebar-ring: 25 93% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--gradient-page);
+    background-attachment: fixed;
+  }
+
+  /* Modern sans-serif headings - clean and professional */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  /* Ensure consistent paragraph and text styling */
+  p, span, a, li, label, input, textarea, button {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-cta);
+  }
+
+  /* Navy text utility */
+  .text-navy {
+    color: hsl(var(--navy));
+  }
+
+  .text-navy-light {
+    color: hsl(var(--navy-light));
+  }
+
+  /* Unified page background - no section breaks */
+  .page-unified {
+    background: transparent;
+    position: relative;
+  }
+
+  .card-premium {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    @apply rounded-xl border border-border/50;
+  }
+
+  .shadow-premium {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-primary-strong {
+    box-shadow: var(--shadow-glow-strong);
+  }
+
+  /* Premium button glow effect */
+  .btn-glow {
+    position: relative;
+  }
+
+  .btn-glow::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, hsl(28 85% 55% / 0.3), hsl(35 80% 52% / 0.15));
+    filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .btn-glow:hover::after {
+    opacity: 1;
+  }
+
+  /* Section divider - subtle */
+  .section-divider {
+    @apply w-16 h-0.5 rounded-full mx-auto;
+    background: linear-gradient(90deg, transparent, hsl(28 85% 55% / 0.4), transparent);
+  }
+
+  /* Glass effect for cards - ultra realistic glass */
+  .glass {
+    background: 
+      linear-gradient(135deg, hsl(0 0% 100% / 0.20) 0%, hsl(0 0% 100% / 0.06) 50%, hsl(0 0% 100% / 0.12) 100%);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.20);
+    box-shadow: 
+      inset 0 0.5px 0 0 hsl(0 0% 100% / 0.4),
+      inset 0 1px 2px 0 hsl(0 0% 100% / 0.16),
+      0 8px 32px -8px hsl(220 25% 10% / 0.10),
+      0 2px 8px -2px hsl(220 25% 10% / 0.06);
+  }
+
+  /* Glass button styles - ultra realistic */
+  .glass-button {
+    background: 
+      linear-gradient(135deg, hsl(0 0% 100% / 0.18) 0%, hsl(0 0% 100% / 0.06) 50%, hsl(0 0% 100% / 0.10) 100%);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.16);
+    box-shadow: 
+      inset 0 0.5px 0 0 hsl(0 0% 100% / 0.32),
+      inset 0 1px 2px 0 hsl(0 0% 100% / 0.12),
+      0 4px 16px -4px hsl(220 25% 10% / 0.08),
+      0 1px 4px -1px hsl(220 25% 10% / 0.05);
+    text-shadow: 0 1px 2px hsl(0 0% 100% / 0.24);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-button:hover {
+    background: 
+      linear-gradient(135deg, hsl(0 0% 100% / 0.26) 0%, hsl(0 0% 100% / 0.12) 50%, hsl(0 0% 100% / 0.18) 100%);
+    border-color: hsl(0 0% 100% / 0.28);
+    box-shadow: 
+      inset 0 0.5px 0 0 hsl(0 0% 100% / 0.4),
+      inset 0 1px 2px 0 hsl(0 0% 100% / 0.16),
+      0 8px 24px -6px hsl(220 25% 10% / 0.12),
+      0 2px 8px -2px hsl(220 25% 10% / 0.08);
+  }
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    animation: scrollBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+
+  /* Subtle float animation */
+  .float-subtle {
+    animation: floatSubtle 8s ease-in-out infinite;
+  }
+
+  @keyframes floatSubtle {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-8px) rotate(0.5deg);
+    }
+  }
+
+  /* Pulse glow for accents */
+  .pulse-glow {
+    animation: pulseGlow 4s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 20px hsl(28 85% 55% / 0.3));
+    }
+    50% {
+      filter: drop-shadow(0 0 40px hsl(28 85% 55% / 0.5));
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
