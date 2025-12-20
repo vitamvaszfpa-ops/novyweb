@@ -48,7 +48,7 @@ const services = [
   {
     icon: ClipboardCheck,
     title: "Penzijní audit",
-    description: "Na základě výstupu ILDP z OSSZ uděláme rozbor chybějících dob a spočítáme váš budoucí důchod.",
+    description: "Na základě výstupu IOLDP z OSSZ uděláme rozbor chybějících dob a spočítáme váš budoucí důchod.",
     href: "/sluzby#penzijni-audit",
   },
   {
