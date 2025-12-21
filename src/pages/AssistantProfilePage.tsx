@@ -13,6 +13,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+// Assistant photos
+import assistant1 from "@/assets/team/assistant-1.png";
+import assistant2 from "@/assets/team/assistant-2.png";
+import assistant3 from "@/assets/team/assistant-3.png";
+import assistant4 from "@/assets/team/assistant-4.png";
+import assistant5 from "@/assets/team/assistant-5.png";
+
 export interface AssistantProfile {
   id: string;
   name: string;
@@ -26,86 +33,89 @@ export interface AssistantProfile {
   phone?: string;
 }
 
+// =====================================================
+// UPRAVTE ÚDAJE NÍŽE - jména, role, specializace, bio atd.
+// =====================================================
 export const assistantsData: AssistantProfile[] = [
   {
     id: "asistentka-1",
-    name: "Asistentka 1",
-    role: "Asistentka",
-    specialty: "Administrativa",
-    photo: "",
-    bio: "Zde napište krátký popis osobnosti a pracovního přístupu asistentky. Jak dlouho pracuje v týmu, co ji baví a jaké jsou její silné stránky.",
+    name: "JMÉNO ASISTENTKY 1", // UPRAVTE
+    role: "Asistentka", // UPRAVTE
+    specialty: "SPECIALIZACE", // UPRAVTE
+    photo: assistant1,
+    bio: "DOPLŇTE POPIS - krátký popis osobnosti a pracovního přístupu asistentky.", // UPRAVTE
     responsibilities: [
-      "Správa administrativy kanceláře",
-      "Koordinace schůzek",
-      "Příprava dokumentace",
+      "ÚKOL 1", // UPRAVTE
+      "ÚKOL 2", // UPRAVTE
+      "ÚKOL 3", // UPRAVTE
     ],
-    gallery: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    email: "asistentka1@example.com",
-    phone: "+420 123 456 789",
+    gallery: [], // DOPLŇTE DALŠÍ FOTKY (volitelné)
+    email: "", // DOPLŇTE EMAIL
+    phone: "", // DOPLŇTE TELEFON
   },
   {
     id: "asistentka-2",
-    name: "Asistentka 2",
-    role: "Asistentka",
-    specialty: "Klientský servis",
-    photo: "",
-    bio: "Zde napište krátký popis osobnosti a pracovního přístupu asistentky. Jak dlouho pracuje v týmu, co ji baví a jaké jsou její silné stránky.",
+    name: "JMÉNO ASISTENTKY 2", // UPRAVTE
+    role: "Asistentka", // UPRAVTE
+    specialty: "SPECIALIZACE", // UPRAVTE
+    photo: assistant2,
+    bio: "DOPLŇTE POPIS - krátký popis osobnosti a pracovního přístupu asistentky.", // UPRAVTE
     responsibilities: [
-      "Komunikace s klienty",
-      "Řešení dotazů a požadavků",
-      "Péče o spokojenost klientů",
+      "ÚKOL 1", // UPRAVTE
+      "ÚKOL 2", // UPRAVTE
+      "ÚKOL 3", // UPRAVTE
     ],
-    gallery: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    email: "asistentka2@example.com",
-    phone: "+420 123 456 789",
+    gallery: [], // DOPLŇTE DALŠÍ FOTKY (volitelné)
+    email: "", // DOPLŇTE EMAIL
+    phone: "", // DOPLŇTE TELEFON
   },
   {
     id: "asistentka-3",
-    name: "Asistentka 3",
-    role: "Asistentka",
-    specialty: "Administrativa",
-    photo: "",
-    bio: "Zde napište krátký popis osobnosti a pracovního přístupu asistentky. Jak dlouho pracuje v týmu, co ji baví a jaké jsou její silné stránky.",
+    name: "JMÉNO ASISTENTKY 3", // UPRAVTE
+    role: "Asistentka", // UPRAVTE
+    specialty: "SPECIALIZACE", // UPRAVTE
+    photo: assistant3,
+    bio: "DOPLŇTE POPIS - krátký popis osobnosti a pracovního přístupu asistentky.", // UPRAVTE
     responsibilities: [
-      "Správa dokumentů",
-      "Organizace kanceláře",
-      "Podpora týmu",
+      "ÚKOL 1", // UPRAVTE
+      "ÚKOL 2", // UPRAVTE
+      "ÚKOL 3", // UPRAVTE
     ],
-    gallery: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    email: "asistentka3@example.com",
-    phone: "+420 123 456 789",
+    gallery: [], // DOPLŇTE DALŠÍ FOTKY (volitelné)
+    email: "", // DOPLŇTE EMAIL
+    phone: "", // DOPLŇTE TELEFON
   },
   {
     id: "asistentka-4",
-    name: "Asistentka 4",
-    role: "Asistentka",
-    specialty: "Podpora týmu",
-    photo: "",
-    bio: "Zde napište krátký popis osobnosti a pracovního přístupu asistentky. Jak dlouho pracuje v týmu, co ji baví a jaké jsou její silné stránky.",
+    name: "JMÉNO ASISTENTKY 4", // UPRAVTE
+    role: "Asistentka", // UPRAVTE
+    specialty: "SPECIALIZACE", // UPRAVTE
+    photo: assistant4,
+    bio: "DOPLŇTE POPIS - krátký popis osobnosti a pracovního přístupu asistentky.", // UPRAVTE
     responsibilities: [
-      "Podpora poradců",
-      "Příprava materiálů",
-      "Interní komunikace",
+      "ÚKOL 1", // UPRAVTE
+      "ÚKOL 2", // UPRAVTE
+      "ÚKOL 3", // UPRAVTE
     ],
-    gallery: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    email: "asistentka4@example.com",
-    phone: "+420 123 456 789",
+    gallery: [], // DOPLŇTE DALŠÍ FOTKY (volitelné)
+    email: "", // DOPLŇTE EMAIL
+    phone: "", // DOPLŇTE TELEFON
   },
   {
     id: "asistentka-5",
-    name: "Asistentka 5",
-    role: "Asistentka",
-    specialty: "Klientský servis",
-    photo: "",
-    bio: "Zde napište krátký popis osobnosti a pracovního přístupu asistentky. Jak dlouho pracuje v týmu, co ji baví a jaké jsou její silné stránky.",
+    name: "JMÉNO ASISTENTKY 5", // UPRAVTE
+    role: "Asistentka", // UPRAVTE
+    specialty: "SPECIALIZACE", // UPRAVTE
+    photo: assistant5,
+    bio: "DOPLŇTE POPIS - krátký popis osobnosti a pracovního přístupu asistentky.", // UPRAVTE
     responsibilities: [
-      "Péče o klienty",
-      "Správa termínů",
-      "Follow-up komunikace",
+      "ÚKOL 1", // UPRAVTE
+      "ÚKOL 2", // UPRAVTE
+      "ÚKOL 3", // UPRAVTE
     ],
-    gallery: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    email: "asistentka5@example.com",
-    phone: "+420 123 456 789",
+    gallery: [], // DOPLŇTE DALŠÍ FOTKY (volitelné)
+    email: "", // DOPLŇTE EMAIL
+    phone: "", // DOPLŇTE TELEFON
   },
 ];
 
