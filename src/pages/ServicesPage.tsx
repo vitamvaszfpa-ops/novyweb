@@ -9,7 +9,8 @@ import {
   ClipboardCheck,
   HelpCircle,
   CheckCircle,
-  ArrowRight 
+  ArrowRight,
+  Download
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -106,7 +107,7 @@ const services = [
     id: "penzijni-audit",
     icon: ClipboardCheck,
     title: "Penzijní audit",
-    description: "Na základě výstupu IOLDP (Informativní list důchodového pojištění) z OSSZ uděláme detailní rozbor vaší pracovní historie. Zjistíme, které doby vám chybí, co je potřeba doložit, a spočítáme, jaký důchod byste měli mít v nároku.",
+    description: "Na základě výstupu IOLDP (Informativní osobní list důchodového pojištění) z OSSZ uděláme detailní rozbor vaší pracovní historie. Zjistíme, které doby vám chybí, co je potřeba doložit, a spočítáme, jaký důchod byste měli mít v nároku.",
     benefits: [
       "Analýza výstupu IOLDP z OSSZ",
       "Identifikace chybějících dob pojištění",
@@ -229,6 +230,11 @@ const ServicesPage = () => {
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Link>
                         </Button>
+                        <Button variant="outline" asChild>
+                          <Link to={`/sluzby/${service.id}`}>
+                            Chci vědět více
+                          </Link>
+                        </Button>
                         {service.id === "hypoteky" && <MortgageCalculator />}
                         {service.id === "investice" && <InvestmentCalculator />}
                       </div>
@@ -281,12 +287,23 @@ const ServicesPage = () => {
               Domluvte si bezplatnou konzultaci a společně najdeme optimální řešení 
               pro vaši situaci. První schůzka je vždy zdarma a nezávazná.
             </p>
-            <Button variant="hero" size="xl" asChild>
-              <Link to="/kontakt">
-                Konzultace zdarma
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button variant="hero" size="xl" asChild>
+                <Link to="/kontakt">
+                  Konzultace zdarma
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+              <Button variant="hero-outline" size="xl" asChild>
+                <a href="#ebook" onClick={(e) => { e.preventDefault(); /* TODO: implement ebook download */ }}>
+                  <Download className="w-5 h-5 mr-2" />
+                  Stáhnout e-book zdarma
+                </a>
+              </Button>
+            </div>
+            <p className="text-muted-foreground/70 text-sm mt-4">
+              Stáhněte si zdarma průvodce finančním plánováním pro nerozhodné
+            </p>
           </AnimatedSection>
         </div>
       </section>
