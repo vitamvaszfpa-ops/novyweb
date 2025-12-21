@@ -17,6 +17,14 @@ import CookiePolicyPage from "./pages/CookiePolicyPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import AssistantProfilePage from "./pages/AssistantProfilePage";
 import NotFound from "./pages/NotFound";
+import InsurancePage from "./pages/services/InsurancePage";
+import InvestmentPage from "./pages/services/InvestmentPage";
+import FinancialPlanningPage from "./pages/services/FinancialPlanningPage";
+import RealEstatePage from "./pages/services/RealEstatePage";
+import RetirementSavingsPage from "./pages/services/RetirementSavingsPage";
+import PensionAuditPage from "./pages/services/PensionAuditPage";
+import MortgagesPage from "./pages/services/MortgagesPage";
+import OtherServicesPage from "./pages/services/OtherServicesPage";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +39,14 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/o-mne" element={<AboutPage />} />
           <Route path="/sluzby" element={<ServicesPage />} />
+          <Route path="/sluzby/pojisteni" element={<InsurancePage />} />
+          <Route path="/sluzby/investice" element={<InvestmentPage />} />
+          <Route path="/sluzby/financni-planovani" element={<FinancialPlanningPage />} />
+          <Route path="/sluzby/reality" element={<RealEstatePage />} />
+          <Route path="/sluzby/duchodove-sporeni" element={<RetirementSavingsPage />} />
+          <Route path="/sluzby/penzijni-audit" element={<PensionAuditPage />} />
+          <Route path="/sluzby/hypoteky" element={<MortgagesPage />} />
+          <Route path="/sluzby/ostatni" element={<OtherServicesPage />} />
           <Route path="/kariera" element={<CareerPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/muj-tym" element={<TeamPage />} />
