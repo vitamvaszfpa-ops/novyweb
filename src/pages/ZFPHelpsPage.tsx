@@ -19,7 +19,7 @@ const ZFPHelpsPage = () => (
             <p className="text-muted-foreground text-lg">Věříme, že úspěch zavazuje. Proto se aktivně zapojujeme do charitativních projektů a pomáháme těm, kteří to potřebují.</p>
           </AnimatedSection>
           
-          <AnimatedSection direction="right" delay={0.2} className="hidden lg:flex justify-center">
+          <AnimatedSection direction="right" delay={0.2} className="flex justify-center lg:justify-end">
             <motion.div 
               className="relative"
               animate={{ 
@@ -40,7 +40,7 @@ const ZFPHelpsPage = () => (
                 <img 
                   src={zfpPomahaLogo} 
                   alt="ZFP Pomáhá Logo" 
-                  className="w-80 h-80 object-contain"
+                  className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain"
                 />
               </div>
               {/* Subtle glow behind */}
