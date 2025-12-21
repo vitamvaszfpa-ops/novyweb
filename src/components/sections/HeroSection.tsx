@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp, Users, FileText, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef, useState, useEffect, useMemo } from "react";
+import heroPortrait from "@/assets/hero-portrait.jpg";
 
 // Calculate ZFP years dynamically - starts at 30 in 2025, +1 each year on April 1st
 const calculateZFPYears = (): number => {
@@ -168,8 +169,8 @@ export const HeroSection = () => {
           </div>
 
           {/* Right column - Image with tilt effect */}
-          <div className="hidden lg:flex justify-center">
-            <TiltImage />
+          <div className="flex justify-center mt-8 lg:mt-0">
+            <TiltImage imageSrc={heroPortrait} />
           </div>
         </div>
 

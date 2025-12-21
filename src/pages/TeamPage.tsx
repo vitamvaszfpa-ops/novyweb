@@ -7,6 +7,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedSection, StaggerChildren, StaggerItem } from "@/components/AnimatedSection";
 import { assistantsData } from "./AssistantProfilePage";
 
+// Team member photos
+import teamMember1 from "@/assets/team/team-member-1.png";
+import teamMember2 from "@/assets/team/team-member-2.png";
+import teamMember3 from "@/assets/team/team-member-3.png";
+import teamMember4 from "@/assets/team/team-member-4.png";
+import teamMember5 from "@/assets/team/team-member-5.png";
+import teamMember6 from "@/assets/team/team-member-6.png";
+import teamMember7 from "@/assets/team/team-member-7.png";
+import teamMember8 from "@/assets/team/team-member-8.png";
+import teamMember9 from "@/assets/team/team-member-9.png";
+import teamMember10 from "@/assets/team/team-member-10.png";
+import teamMember11 from "@/assets/team/team-member-11.png";
+
 interface TeamMember {
   id?: string;
   name: string;
@@ -16,19 +29,21 @@ interface TeamMember {
   website?: string;
 }
 
+// =====================================================
+// UPRAVTE ÚDAJE NÍŽE - jména, role, specializace a weby
+// =====================================================
 const advisors: TeamMember[] = [
-  { name: "Jan Poradce", role: "Senior poradce", specialty: "Investice", photo: "", website: "https://example.com" },
-  { name: "Marie Nováková", role: "Poradkyně", specialty: "Pojištění", photo: "", website: "https://example.com" },
-  { name: "Petr Svoboda", role: "Poradce", specialty: "Hypotéky", photo: "", website: "https://example.com" },
-  { name: "Kolega 4", role: "Poradce", specialty: "Finanční plánování", photo: "", website: "https://example.com" },
-  { name: "Kolega 5", role: "Poradce", specialty: "Investice", photo: "", website: "https://example.com" },
-  { name: "Kolega 6", role: "Poradce", specialty: "Pojištění", photo: "", website: "https://example.com" },
-  { name: "Kolega 7", role: "Senior poradce", specialty: "Hypotéky", photo: "", website: "https://example.com" },
-  { name: "Kolega 8", role: "Poradce", specialty: "Spoření", photo: "", website: "https://example.com" },
-  { name: "Kolega 9", role: "Poradce", specialty: "Důchody", photo: "", website: "https://example.com" },
-  { name: "Kolega 10", role: "Poradce", specialty: "Investice", photo: "", website: "https://example.com" },
-  { name: "Kolega 11", role: "Poradce", specialty: "Pojištění", photo: "", website: "https://example.com" },
-  { name: "Kolega 12", role: "Poradce", specialty: "Finanční plánování", photo: "", website: "https://example.com" },
+  { name: "JMÉNO 1", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember1, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 2", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember2, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 3", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember3, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 4", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember4, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 5", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember5, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 6", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember6, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 7", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember7, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 8", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember8, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 9", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember9, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 10", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember10, website: "" /* DOPLŇTE URL WEBU */ },
+  { name: "JMÉNO 11", role: "POZICE", specialty: "SPECIALIZACE", photo: teamMember11, website: "" /* DOPLŇTE URL WEBU */ },
 ];
 
 // Map assistants from the shared data
