@@ -6,6 +6,7 @@ import { PersonSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedSection, StaggerChildren, StaggerItem } from "@/components/AnimatedSection";
+import aboutPortrait from "@/assets/about-portrait.jpg";
 const milestones = [{
   year: "2004",
   title: "Začátek podnikání",
@@ -76,17 +77,12 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">
-              <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-secondary to-secondary/80 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent mx-auto mb-6 flex items-center justify-center">
-                      <span className="text-5xl font-serif font-bold text-primary-foreground">FP</span>
-                    </div>
-                    <p className="text-secondary-foreground/60 text-sm">
-                      Profesionální fotografie připravujeme
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={aboutPortrait} 
+                  alt="Michal Vítámvás - finanční poradce" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimatedSection>
 
