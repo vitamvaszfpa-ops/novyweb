@@ -12,7 +12,7 @@ const mortgageServices = [
   {
     icon: Home,
     title: "Hypotéka na bydlení",
-    description: "Chcete koupit byt nebo dům ve Žďáře nebo na Vysočině? Srovnám nabídky od 10+ bank a zajistím vám podmínky, které byste sami nedostali.",
+    description: "Chcete koupit byt nebo dům ve Žďáře nebo na Vysočině? Srovnám nabídky od desítek bank a zajistím vám podmínky, které byste sami nedostali.",
   },
   {
     icon: Building2,
@@ -37,7 +37,7 @@ const mortgageServices = [
 ];
 
 const benefits = [
-  "Srovnání nabídek od 10+ bank na jednom místě",
+  "Srovnání nabídek od desítek bank na jednom místě",
   "Vyjednám vám lepší úrok, než byste dostali na pobočce",
   "Všechnu papírovou práci vyřídím za vás",
   "Poradím i s pojištěním nemovitosti",
@@ -145,7 +145,7 @@ const MortgagesPage = () => {
                   Neřeknou vám, že konkurence má lepší úrok nebo méně poplatků. Proč by taky měli?
                 </p>
                 <p>
-                  Já nejsem vázaný na jednu banku. Srovnám nabídky od více než 10 bank a vyjednám 
+                  Já nejsem vázaný na jednu banku. Srovnám nabídky od desítek bank a vyjednám 
                   vám individuální podmínky. Díky objemu, který zprostředkovávám, dostanu lepší 
                   úroky než náhodný klient z ulice.
                 </p>
