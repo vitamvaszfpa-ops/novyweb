@@ -11,46 +11,46 @@ import InvestmentCalculator from "@/components/InvestmentCalculator";
 const investmentTypes = [
   {
     icon: BarChart3,
-    title: "Fondy kvalifikovaných investorů (FKI)",
-    description: "Exkluzivní investiční příležitosti s vyššími výnosy. Pro investory od 1 mil. Kč.",
+    title: "Fondy kvalifikovaných investorů",
+    description: "Máte volný milion a víc? FKI nabízí zajímavé výnosy, které běžné fondy nedají. Ukážu vám možnosti, které jsou jinak těžko dostupné.",
   },
   {
     icon: Gem,
     title: "Investiční zlato",
-    description: "Fyzické i papírové zlato jako ochrana proti inflaci a diverzifikace portfolia.",
+    description: "Zlato není o rychlém zbohatnutí, ale o ochraně majetku. Když všechno ostatní padá, zlato drží. Mám přístup k fyzickému i papírovému zlatu.",
   },
   {
     icon: Coins,
     title: "Podílové fondy",
-    description: "Akciové, dluhopisové a smíšené fondy. Pravidelné investování od 500 Kč měsíčně.",
+    description: "Ideální start pro většinu lidí. Můžete začít od 500 Kč měsíčně a nechat peníze růst. Akciové, dluhopisové, smíšené – vyberu podle vašeho profilu.",
   },
   {
     icon: Building,
     title: "Realitní fondy",
-    description: "Investice do nemovitostí bez starostí se správou. Stabilní výnosy z nájmů.",
+    description: "Chcete výnosy z nemovitostí bez starostí s nájemníky? Realitní fondy vám dají podíl na nájmech z komerčních budov.",
   },
   {
     icon: Percent,
-    title: "Participace",
-    description: "Podíl na výnosech z konkrétních projektů. Alternativní investiční příležitosti.",
+    title: "Participace a alternativy",
+    description: "Podíl na konkrétních projektech – od developmentu po energetiku. Vyšší riziko, ale i vyšší potenciál. Pouze pro ty, kdo vědí, do čeho jdou.",
   },
 ];
 
 const benefits = [
-  "Investice již od 500 Kč měsíčně",
-  "Řešení pro malé i milionové vklady",
-  "Individuální investiční strategie",
-  "Pravidelný monitoring a úpravy",
-  "Vzdělávání a vysvětlení rizik",
-  "Dlouhodobá spolupráce a podpora",
+  "Začít můžete od 500 Kč měsíčně",
+  "Řešení pro malé úspory i milionové investice",
+  "Investiční strategie podle vašich cílů a tolerance k riziku",
+  "Pravidelně kontroluju, jestli portfolio dává smysl",
+  "Vysvětlím vám, jak to funguje – žádný investor-speech",
+  "18 let zkušeností s investicemi na Vysočině",
 ];
 
 const InvestmentPage = () => {
   return (
     <Layout>
       <SEO
-        title="Investice Žďár nad Sázavou - FKI, zlato, fondy, reality | ZFP Group"
-        description="Investiční poradenství na Vysočině. Fondy kvalifikovaných investorů, investiční zlato, podílové fondy, realitní fondy. Investujte od 500 Kč měsíčně. Konzultace zdarma."
+        title="Investice Žďár nad Sázavou | Fondy, zlato, reality | Roman Hájek"
+        description="Chcete investovat, ale nevíte jak začít? Za 18 let jsem pomohl stovkám lidí ze Žďáru a okolí. Od 500 Kč měsíčně po milionové investice. Konzultace zdarma."
         canonical="/sluzby/investice"
       />
       <BreadcrumbSchema
@@ -78,13 +78,14 @@ const InvestmentPage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Pomohu vám rozmnožit váš majetek s ohledem na váš rizikový profil a časový horizont. 
-                Od pravidelného spoření po milionové investice – vše na míru vašim cílům.
+                Peníze na účtu vám inflace sežere. Investování je způsob, jak tomu zabránit 
+                a nechat peníze pracovat za vás. Nemusíte být milionář – začít můžete 
+                od stovek měsíčně.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci začít investovat
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -100,11 +101,11 @@ const InvestmentPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Investiční možnosti
+              Do čeho můžete investovat
             </h2>
             <p className="text-muted-foreground text-lg">
-              Nabízím široké spektrum investičních produktů pro různé cíle a rizikové profily. 
-              Společně najdeme optimální mix pro vaše portfolio.
+              Není jedna správná investice pro všechny. Záleží na tom, kolik máte, jak dlouho 
+              můžete počkat a kolik rizika zvládnete. Společně najdeme mix, který vám sedne.
             </p>
           </AnimatedSection>
 
@@ -136,23 +137,22 @@ const InvestmentPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-                Jak investování funguje?
+                Proč investovat přes mě?
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Investování je způsob, jak nechat vaše peníze pracovat za vás. Místo nechávání 
-                  úspor na běžném účtu, kde ztrácejí hodnotu kvůli inflaci, je vkládáte do aktiv, 
-                  která mohou růst.
+                  Můžete si koupit akcie sami přes aplikaci. Ale víte, které? A kdy prodat? 
+                  A co daně? Investování není složité, ale má svá pravidla. Za 18 let jsem 
+                  viděl, jak lidé zbytečně tratí, protože je nikdo nevedl.
                 </p>
                 <p>
-                  Klíčem k úspěšnému investování je diverzifikace – rozložení peněz do různých 
-                  typů aktiv. Důležitý je také časový horizont – čím déle investujete, tím více 
-                  můžete využít sílu složeného úročení.
+                  Nejdřív zjistím, co potřebujete – jestli spoříte dětem na školu, sobě 
+                  na důchod nebo chcete zhodnotit dědictví. Podle toho nastavím strategii. 
+                  Konzervativní, vyvážená nebo agresivní – záleží na vás.
                 </p>
                 <p>
-                  Mou rolí je pomoci vám stanovit investiční strategii, která odpovídá vašim 
-                  cílům, toleranci k riziku a časovému horizontu. Průběžně vaše portfolio 
-                  monitoruji a upravuji podle vývoje trhu a vašich potřeb.
+                  A pak to pravidelně kontroluju. Trhy se mění, vaše situace se mění. 
+                  Portfolio musí držet krok. Nebudete na to sami.
                 </p>
               </div>
             </AnimatedSection>
@@ -161,7 +161,7 @@ const InvestmentPage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -187,14 +187,14 @@ const InvestmentPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Každý, kdo chce zhodnotit úspory lépe než na účtu</li>
-                    <li>• Rodiče spořící dětem na vzdělání</li>
-                    <li>• Lidé plánující nákup nemovitosti</li>
-                    <li>• Ti, kdo chtějí budovat pasivní příjem</li>
-                    <li>• Investoři hledající nové příležitosti</li>
+                    <li>• Máte peníze na účtu, které tam jen leží</li>
+                    <li>• Chcete spořit dětem na vzdělání</li>
+                    <li>• Plánujete koupit nemovitost za pár let</li>
+                    <li>• Chcete si budovat pasivní příjem</li>
+                    <li>• Zdědili jste peníze a nevíte, co s nimi</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -205,12 +205,12 @@ const InvestmentPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo očekávají garantované vysoké výnosy bez rizika</li>
-                    <li>• Pro ty, kdo potřebují peníze okamžitě k dispozici</li>
-                    <li>• Pro ty, kdo nejsou ochotni investovat dlouhodobě</li>
+                    <li>• Čekáte garantované vysoké výnosy bez rizika – to neexistuje</li>
+                    <li>• Potřebujete peníze za měsíc – investice chce čas</li>
+                    <li>• Hledáte "zaručený tip" na rychlé zbohatnutí</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -224,16 +224,16 @@ const InvestmentPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Připraveni začít investovat?
+              Nechte peníze pracovat za vás
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně vytvoříme investiční strategii 
-              na míru vašim cílům. První schůzka je vždy zdarma a nezávazná.
+              Zavolejte nebo napište a probereme, co by pro vás dávalo smysl. 
+              První konzultace je zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci konzultaci zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
