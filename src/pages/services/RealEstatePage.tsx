@@ -11,45 +11,45 @@ const realEstateServices = [
   {
     icon: HandCoins,
     title: "Prodej nemovitostí",
-    description: "Profesionální prezentace, marketing a kompletní servis při prodeji vaší nemovitosti.",
+    description: "Chcete prodat byt nebo dům na Vysočině? Postarám se o prezentaci, marketing i jednání s kupci. Vy jen podepíšete.",
   },
   {
     icon: Search,
     title: "Koupě nemovitostí",
-    description: "Pomůžu vám najít ideální nemovitost podle vašich požadavků a rozpočtu.",
+    description: "Hledáte bydlení ve Žďáře nebo okolí? Znám místní trh a najdu vám nemovitost, která sedí vašim požadavkům i rozpočtu.",
   },
   {
     icon: Key,
     title: "Asistovaný nákup",
-    description: "Kompletní servis od výběru až po předání klíčů. Provedu vás celým procesem.",
+    description: "Nevíte, jak na to? Provedu vás celým procesem od výběru po předání klíčů. Právník, odhad, zápis do katastru – všechno zařídím.",
   },
   {
     icon: Home,
     title: "Financování",
-    description: "Zajistím hypotéku s nejlepšími podmínkami od více bank. Kompletní vyřízení.",
+    description: "Velká výhoda – nemovitost i hypotéku vyřídíte na jednom místě. Zajistím vám nejlepší podmínky od 10+ bank.",
   },
   {
     icon: FileText,
     title: "Pronájem",
-    description: "Hledání nájemníků, příprava smluv, správa nemovitostí. Pronájem bez starostí.",
+    description: "Máte nemovitost k pronájmu? Najdu vám spolehlivé nájemníky, připravím smlouvy a můžu se starat o správu.",
   },
 ];
 
 const benefits = [
-  "Lokální znalost regionu Vysočina",
-  "Kompletní servis od A do Z",
-  "Propojení s financováním",
-  "Profesionální prezentace nemovitostí",
-  "Právní a administrativní podpora",
-  "Osobní přístup a dostupnost",
+  "Znám Žďár a Vysočinu – vím, co kde stojí a proč",
+  "Nemovitost i hypotéku vyřídíte u mě",
+  "Osobní přístup – nejsem velká realitka",
+  "Postarám se o veškerou administrativu",
+  "Právní podpora a kontrola smluv",
+  "18 let zkušeností s realitami na Vysočině",
 ];
 
 const RealEstatePage = () => {
   return (
     <Layout>
       <SEO
-        title="Reality Žďár nad Sázavou - Prodej, koupě, financování nemovitostí | ZFP Group"
-        description="Kompletní realitní servis na Vysočině. Prodej, koupě, asistovaný nákup, financování i pronájem nemovitostí. Lokální znalost, osobní přístup. Konzultace zdarma."
+        title="Reality Žďár nad Sázavou | Prodej, koupě, financování | Roman Hájek"
+        description="Prodáváte nebo kupujete nemovitost ve Žďáře nad Sázavou? Za 18 let znám místní trh. Kompletní servis od hledání po financování. Konzultace zdarma."
         canonical="/sluzby/reality"
       />
       <BreadcrumbSchema
@@ -77,13 +77,14 @@ const RealEstatePage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Kompletní realitní servis v regionu Vysočina a okolí. Pomůžu vám s koupí, prodejem, 
-                financováním i pronájmem nemovitostí. Profesionálně a s lokální znalostí.
+                Kupujete nebo prodáváte nemovitost na Vysočině? Znám místní trh, znám ceny 
+                a hlavně – vyřídím vám i financování. Všechno na jednom místě, bez pobíhání 
+                mezi realitkou a bankou.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci probrat nemovitost
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -98,11 +99,11 @@ const RealEstatePage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Realitní služby, které nabízím
+              S čím vám můžu pomoct
             </h2>
             <p className="text-muted-foreground text-lg">
-              Ať už prodáváte, kupujete nebo pronajímáte – poskytnu vám komplexní servis 
-              s osobním přístupem a znalostí místního trhu.
+              Ať už prodáváte, kupujete nebo pronajímáte – mám zkušenosti a kontakty, 
+              aby to proběhlo hladce.
             </p>
           </AnimatedSection>
 
@@ -138,17 +139,18 @@ const RealEstatePage = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Na rozdíl od velkých realitních kanceláří nabízím osobní přístup a znalost 
-                  lokálního trhu na Vysočině. Znám region, znám ceny a znám lidi.
+                  Nejsem velká realitní kancelář s call centrem. Jsem člověk ze Žďáru, 
+                  který tu žije 18 let a zná každou ulici. Vím, kde jsou dobré školy, 
+                  kde je klid a kde radši nekupovat.
                 </p>
                 <p>
-                  Velkou výhodou je propojení s finančními službami. Pokud kupujete nemovitost, 
-                  zajistím vám nejen její nalezení, ale i optimální financování – hypotéku 
-                  s nejlepšími podmínkami od více bank.
+                  Velká výhoda? Vyřídím vám nemovitost i hypotéku. Nemusíte běhat mezi 
+                  realitkou a bankou. Najdu vám bydlení a rovnou zajistím financování 
+                  s nejlepšími podmínkami.
                 </p>
                 <p>
-                  Provedu vás celým procesem od prvního prohlížení až po předání klíčů. 
-                  Postarám se o veškerou administrativu, smlouvy a komunikaci s úřady.
+                  A hlavně – postarám se o všechnu tu papírovou práci. Smlouvy, katastr, 
+                  právník. Vy se můžete soustředit na to důležité – vybrat si domov.
                 </p>
               </div>
             </AnimatedSection>
@@ -157,7 +159,7 @@ const RealEstatePage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -183,14 +185,14 @@ const RealEstatePage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Každý, kdo plánuje koupit nemovitost na Vysočině</li>
-                    <li>• Majitelé, kteří chtějí prodat rychle a za dobrou cenu</li>
-                    <li>• Investoři hledající nemovitosti k pronájmu</li>
-                    <li>• Ti, kdo potřebují pomoc s financováním</li>
-                    <li>• Každý, kdo oceňuje osobní přístup</li>
+                    <li>• Kupujete byt nebo dům na Vysočině</li>
+                    <li>• Prodáváte a chcete dostat dobrou cenu</li>
+                    <li>• Investujete do nemovitostí k pronájmu</li>
+                    <li>• Potřebujete pomoct s financováním</li>
+                    <li>• Oceňujete osobní přístup místo call centra</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -201,12 +203,12 @@ const RealEstatePage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo hledají pouze online inzeráty bez servisu</li>
-                    <li>• Pro ty, kdo hledají nemovitosti mimo region Vysočina</li>
-                    <li>• Pro ty, kdo preferují velké realitní kanceláře</li>
+                    <li>• Hledáte nemovitosti v Praze nebo Brně</li>
+                    <li>• Chcete jen online inzeráty bez servisu</li>
+                    <li>• Preferujete velké realitní kanceláře</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -220,16 +222,16 @@ const RealEstatePage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Plánujete koupit nebo prodat nemovitost?
+              Pojďme to probrat
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně probereme vaše možnosti. 
-              První schůzka je vždy zdarma a nezávazná.
+              Ať už kupujete nebo prodáváte – zavolejte nebo napište. Schůzka je 
+              zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci konzultaci zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
