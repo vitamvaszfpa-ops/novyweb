@@ -16,40 +16,52 @@ import { AnimatedSection, StaggerChildren, StaggerItem } from "@/components/Anim
 
 const services = [
   {
-    icon: Home,
-    title: "Hypotéky a úvěry",
-    description: "Kupujete byt nebo dům? Pomohu vám najít nejlepší hypotéku ze všech bank – nemusíte obíhat pobočky.",
-    href: "/sluzby/hypoteky",
-  },
-  {
     icon: Shield,
-    title: "Pojištění domácnosti a rodiny",
-    description: "Chráním to, na čem vám záleží – domov, auto, zdraví. Bez zbytečného přepojištění a za rozumnou cenu.",
+    title: "Pojištění",
+    description: "Pojištění domácnosti, nemovitosti, auta i rodiny. Vyberu to, co skutečně potřebujete, bez zbytečného přeplácení.",
     href: "/sluzby/pojisteni",
   },
   {
     icon: TrendingUp,
-    title: "Investice a zhodnocení peněz",
-    description: "Aby vaše peníze neztrácely hodnotu. Od pravidelného spoření po větší investice – podle toho, co vám vyhovuje.",
+    title: "Investice",
+    description: "Zhodnoťte své peníze – od pravidelného spoření po větší částky. Investovat můžete už od 500 Kč měsíčně.",
     href: "/sluzby/investice",
   },
   {
+    icon: Briefcase,
+    title: "Finanční plánování",
+    description: "Uděláme si pořádek ve vašich financích. Společně sestavíme plán, který vám pomůže dosáhnout vašich cílů.",
+    href: "/sluzby/financni-planovani",
+  },
+  {
+    icon: Building2,
+    title: "Reality",
+    description: "Kupujete nebo prodáváte nemovitost? Pomohu s odhadem ceny, financováním i celým procesem.",
+    href: "/sluzby/reality",
+  },
+  {
     icon: PiggyBank,
-    title: "Spoření na důchod",
-    description: "Státní důchod sám o sobě nestačí. Ukážu vám, jak se připravit, abyste si v penzi mohli užívat.",
+    title: "Důchodové spoření",
+    description: "Připravte se na penzi. Ukážu vám, jak využít státní příspěvky a daňové výhody naplno.",
     href: "/sluzby/duchodove-sporeni",
   },
   {
     icon: ClipboardCheck,
-    title: "Audit smluv zdarma",
-    description: "Máte pojistky a spoření, ale nevíte, jestli jsou dobré? Projdeme je společně – bez závazků.",
+    title: "Penzijní audit",
+    description: "Spočítám vám budoucí důchod na základě dat z ČSSZ. Zjistíte, jestli vám něco nechybí.",
     href: "/sluzby/penzijni-audit",
   },
   {
-    icon: Building2,
-    title: "Pomoc s nemovitostmi",
-    description: "Prodáváte nebo kupujete nemovitost? Pomohu vám se vším – od odhadu ceny po právní služby.",
-    href: "/sluzby/reality",
+    icon: Home,
+    title: "Hypotéky a úvěry",
+    description: "Najdu nejlepší hypotéku ze všech bank. Vyřídím vše za vás – ušetříte čas i peníze.",
+    href: "/sluzby/hypoteky",
+  },
+  {
+    icon: HelpCircle,
+    title: "Ostatní služby",
+    description: "Potřebujete poradit s něčím konkrétním? Individuální konzultace na míru vaší situaci.",
+    href: "/sluzby/ostatni",
   },
 ];
 
