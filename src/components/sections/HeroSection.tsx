@@ -111,7 +111,7 @@ export const HeroSection = () => {
             duration: 0.6
           }} className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
               <span className="w-2 h-2 rounded-full bg-primary pulse-glow" />
-              <span className="text-primary text-sm font-medium">Váš důvěryhodný finanční partner
+              <span className="text-primary text-sm font-medium">Finanční poradce Žďár nad Sázavou
             </span>
             </motion.div>
 
@@ -126,11 +126,10 @@ export const HeroSection = () => {
             duration: 0.7,
             delay: 0.1
           }} className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] mb-6 font-bold">
-              Budujte svou{" "}
+              Řešíte hypotéku, pojištění nebo jak{" "}
               <span className="text-gradient">
-                finanční jistotu
-              </span>{" "}
-              s profesionálním přístupem
+                zhodnotit peníze?
+              </span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -143,7 +142,7 @@ export const HeroSection = () => {
           }} transition={{
             duration: 0.7,
             delay: 0.2
-          }} className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">Pomáhám jednotlivcům a rodinám v regionu Vysočina činit moudrá finanční rozhodnutí. Více než 18 let zkušeností, osobní přístup a důvěra tisíců klientů.</motion.p>
+          }} className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">Pomáhám lidem na Vysočině udělat si pořádek ve financích. Společně najdeme řešení, které sedí právě vám – bez zbytečných produktů a srozumitelně.</motion.p>
 
             {/* CTA Buttons */}
             <motion.div initial={{
@@ -158,7 +157,7 @@ export const HeroSection = () => {
           }} className="flex flex-wrap gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Bezplatná konzultace
+                  Nezávazná konzultace zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
