@@ -25,6 +25,7 @@ import RetirementSavingsPage from "./pages/services/RetirementSavingsPage";
 import PensionAuditPage from "./pages/services/PensionAuditPage";
 import MortgagesPage from "./pages/services/MortgagesPage";
 import OtherServicesPage from "./pages/services/OtherServicesPage";
+import EducationPage from "./pages/services/EducationPage";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/sluzby/penzijni-audit" element={<PensionAuditPage />} />
           <Route path="/sluzby/hypoteky" element={<MortgagesPage />} />
           <Route path="/sluzby/ostatni" element={<OtherServicesPage />} />
+          <Route path="/sluzby/vzdelavani" element={<EducationPage />} />
           <Route path="/kariera" element={<CareerPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/muj-tym" element={<TeamPage />} />
