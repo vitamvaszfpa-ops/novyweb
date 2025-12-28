@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HelpCircle, CheckCircle, ArrowRight, MessageCircle, FileQuestion, Lightbulb, Scale, Users } from "lucide-react";
+import { HelpCircle, CheckCircle, ArrowRight, MessageCircle, FileQuestion, Scale } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/StructuredData";
@@ -23,16 +23,6 @@ const otherServices = [
     title: "Pomoc s dokumenty",
     description: "Máte smlouvu a nerozumíte jí? Přineste mi ji a vysvětlím vám, co tam je a na co si dát pozor.",
   },
-  {
-    icon: Lightbulb,
-    title: "Finanční vzdělávání",
-    description: "Chcete rozumět financím, ale nevíte, kde začít? Naučím vás základy – investování, pojištění, hypotéky.",
-  },
-  {
-    icon: Users,
-    title: "Rodinné finance",
-    description: "Jak spolu mluvit o penězích? Konzultace pro páry a rodiny, kteří chtějí táhnout za jeden provaz.",
-  },
 ];
 
 const benefits = [
@@ -40,7 +30,6 @@ const benefits = [
   "Řešení nestandardních situací",
   "Nezávislý druhý názor",
   "Pomoc s dokumenty a smlouvami",
-  "Vzdělávání v oblasti financí",
   "Hodinová sazba 2 500 Kč",
 ];
 
