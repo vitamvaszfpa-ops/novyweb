@@ -10,7 +10,8 @@ import {
   HelpCircle,
   CheckCircle,
   ArrowRight,
-  Download
+  Download,
+  GraduationCap
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -26,130 +27,145 @@ const services = [
     id: "pojisteni",
     icon: Shield,
     title: "Pojištění",
-    description: "Komplexní pojištění pro jednotlivce, rodiny i firmy. Životní pojištění, majetkové pojištění, pojištění odpovědnosti, firemní pojištění a cestovní pojištění. Srovnávám nabídky od více pojišťoven a vybírám to nejlepší pro vaši situaci.",
+    description: "Pojištění domácnosti, nemovitosti, auta i rodiny. Vyberu to, co skutečně potřebujete, bez zbytečného přeplácení. Srovnám nabídky od více pojišťoven a vysvětlím vám rozdíly.",
     benefits: [
-      "Životní pojištění – ochrana rodiny a příjmu",
-      "Majetkové pojištění – nemovitosti, domácnost, vozidla",
-      "Firemní pojištění – odpovědnost, majetek, přerušení provozu",
-      "Pojištění odpovědnosti – za škodu v běžném životě i podnikání",
+      "Životní pojištění – ochrana příjmu a rodiny",
+      "Pojištění domácnosti a nemovitosti",
+      "Pojištění auta – povinné ručení i havarijní",
+      "Úrazové pojištění pro děti i dospělé",
       "Cestovní pojištění – krátkodobé i celoroční",
       "Srovnání nabídek od více než 15 pojišťoven",
     ],
-    forWhom: "Pro každého, kdo chce chránit sebe, rodinu nebo firmu před nepředvídatelnými událostmi.",
-    notForWhom: "Pro ty, kdo hledají pouze nejlevnější pojištění bez ohledu na kvalitu krytí.",
+    forWhom: "Pro každého, kdo chce mít jistotu, že je rodina i majetek chráněný.",
+    notForWhom: "Pro ty, kdo hledají jen to nejlevnější bez ohledu na to, co pojistka skutečně kryje.",
   },
   {
     id: "investice",
     icon: TrendingUp,
-    title: "Investice a zhodnocení",
-    description: "Pomohu vám rozmnožit váš majetek s ohledem na váš rizikový profil a časový horizont. Nabízím fondy kvalifikovaných investorů (FKI), investiční zlato, podílové fondy, realitní fondy a participace. Možnost investovat od 500 Kč měsíčně – pro malé pravidelné vklady i jednorázové milionové investice.",
+    title: "Investice",
+    description: "Zhodnoťte své peníze – od pravidelného spoření po větší částky. Investovat můžete už od 500 Kč měsíčně. Vysvětlím vám, jak investování funguje, a najdeme řešení, které odpovídá vašim cílům.",
     benefits: [
-      "Fondy kvalifikovaných investorů (FKI)",
-      "Investiční zlato – fyzické i papírové",
       "Podílové fondy – akciové, dluhopisové, smíšené",
-      "Realitní fondy – investice do nemovitostí",
-      "Participace na výnosech",
-      "Pravidelné i jednorázové investice od 500 Kč",
-      "Řešení pro malé i milionové vklady",
+      "Investiční zlato – fyzické i papírové",
+      "Fondy kvalifikovaných investorů (FKI)",
+      "Realitní fondy",
+      "Pravidelné spoření už od 500 Kč měsíčně",
+      "Jednorázové investice větších částek",
     ],
-    forWhom: "Pro každého, kdo chce své peníze zhodnotit lépe než na běžném účtu – od drobných střadatelů po velké investory.",
-    notForWhom: "Pro ty, kdo očekávají garantované vysoké výnosy bez rizika.",
+    forWhom: "Pro každého, kdo chce, aby peníze pracovaly lépe než na spořicím účtu.",
+    notForWhom: "Pro ty, kdo očekávají zázračné výnosy bez jakéhokoliv rizika.",
   },
   {
     id: "financni-planovani",
     icon: Briefcase,
     title: "Finanční plánování",
-    description: "Komplexní pohled na vaše finance. Analyzuji vaši současnou situaci, definuji s vámi finanční cíle a vytvořím plán, který vám pomůže dosáhnout vašich životních snů – ať už je to vlastní bydlení, vzdělání dětí nebo klidný důchod.",
+    description: "Uděláme si pořádek ve vašich financích. Společně sestavíme plán, který vám pomůže dosáhnout vašich cílů – ať už je to vlastní bydlení, vzdělání dětí nebo klidný důchod.",
     benefits: [
-      "Analýza současné finanční situace",
-      "Definice krátkodobých i dlouhodobých cílů",
-      "Návrh komplexního řešení na míru",
+      "Rozbor současné finanční situace",
+      "Stanovení konkrétních cílů",
+      "Návrh řešení na míru",
       "Optimalizace výdajů a příjmů",
-      "Pravidelné revize a úpravy plánu",
-      "Dlouhodobá spolupráce a podpora",
+      "Pravidelné kontroly a úpravy plánu",
+      "Dlouhodobá spolupráce",
     ],
     forWhom: "Pro každého, kdo chce mít jasný přehled a plán pro své finance.",
-    notForWhom: "Pro ty, kdo hledají rychlé řešení bez dlouhodobé spolupráce.",
+    notForWhom: "Pro ty, kdo hledají jednorázové rychlé řešení.",
   },
   {
     id: "reality",
     icon: Building2,
     title: "Reality",
-    description: "Kompletní realitní servis v regionu Vysočina a okolí. Pomůžu vám s koupí, prodejem, financováním i pronájmem nemovitostí. Nabízím asistovaný nákup, kdy vás provedu celým procesem od výběru až po předání klíčů.",
+    description: "Kupujete nebo prodáváte nemovitost? Pomohu s odhadem ceny, financováním i celým procesem. Znám místní trh a provedu vás od první schůzky až po předání klíčů.",
     benefits: [
-      "Prodej nemovitostí – profesionální prezentace a marketing",
-      "Koupě nemovitostí – vyhledání ideální nemovitosti",
-      "Asistovaný nákup – kompletní servis od A do Z",
-      "Financování – zajištění hypotéky s nejlepšími podmínkami",
-      "Pronájem – hledání nájemníků, správa nemovitostí",
-      "Lokální znalost regionu Vysočina",
+      "Prodej nemovitosti – prezentace a marketing",
+      "Pomoc s koupí – vyhledání a výběr",
+      "Asistovaný nákup – kompletní servis",
+      "Zajištění financování",
+      "Pronájem a správa nemovitostí",
+      "Znalost trhu na Vysočině",
     ],
-    forWhom: "Pro každého, kdo plánuje koupit, prodat nebo pronajmout nemovitost na Vysočině.",
-    notForWhom: "Pro ty, kdo hledají pouze online inzeráty bez osobního servisu.",
+    forWhom: "Pro každého, kdo řeší koupi, prodej nebo pronájem nemovitosti.",
+    notForWhom: "Pro ty, kdo hledají jen online inzeráty bez osobního přístupu.",
   },
   {
     id: "duchodove-sporeni",
     icon: PiggyBank,
     title: "Důchodové spoření",
-    description: "Připravte se na klidný důchod. Pomohu vám s penzijním spořením, které je propojené s investičními strategiemi pro maximální výnos. Využijeme státní příspěvky, daňové výhody zaměstnavatele i efektivní investování.",
+    description: "Připravte se na penzi. Ukážu vám, jak využít státní příspěvky a daňové výhody naplno. Spočítáme, kolik potřebujete spořit, aby vám důchod nestačil jen tak tak.",
     benefits: [
       "Penzijní spoření se státním příspěvkem",
+      "Příspěvky od zaměstnavatele",
+      "Daňové úspory",
+      "Výpočet potřebné měsíční úložky",
       "Propojení s investičními produkty",
-      "Optimalizace daňových výhod",
-      "Příspěvky zaměstnavatele",
-      "Výpočet potřebné úspory na důchod",
-      "Pravidelná revize a úpravy",
+      "Pravidelné kontroly a úpravy",
     ],
-    forWhom: "Pro každého, kdo chce mít zajištěnou finanční stabilitu i v důchodu.",
-    notForWhom: "Pro ty, kdo odmítají myslet na budoucnost.",
+    forWhom: "Pro každého, kdo nechce v důchodu škrtat a chce mít zajištěno.",
+    notForWhom: "Pro ty, kdo si říkají ‚na to mám ještě čas'.",
   },
   {
     id: "penzijni-audit",
     icon: ClipboardCheck,
     title: "Penzijní audit",
-    description: "Na základě výstupu IOLDP (Informativní osobní list důchodového pojištění) z OSSZ uděláme detailní rozbor vaší pracovní historie. Zjistíme, které doby vám chybí, co je potřeba doložit, a spočítáme, jaký důchod byste měli mít v nároku.",
+    description: "Spočítám vám budoucí důchod na základě dat z ČSSZ. Zjistíte, jestli vám něco nechybí a co můžete udělat pro vyšší penzi.",
     benefits: [
-      "Analýza výstupu IOLDP z OSSZ",
-      "Identifikace chybějících dob pojištění",
-      "Poradenství, co a jak doložit",
+      "Analýza výpisu z ČSSZ",
+      "Kontrola odpracovaných let",
+      "Identifikace chybějících dob",
       "Výpočet předpokládaného důchodu",
-      "Návrhy, jak situaci zlepšit",
-      "Příprava na komunikaci s ČSSZ",
+      "Doporučení, co doložit",
+      "Příprava na jednání s úřady",
     ],
-    forWhom: "Pro každého, kdo se blíží důchodovému věku nebo chce mít přehled o svých nárocích.",
-    notForWhom: "Pro ty, kdo nemají zájem o kontrolu svých důchodových nároků.",
+    forWhom: "Pro každého, kdo se blíží důchodu nebo chce mít přehled o svých nárocích.",
+    notForWhom: "Pro ty, kdo věří, že se o vše postará stát.",
   },
   {
     id: "hypoteky",
     icon: Home,
     title: "Hypotéky a úvěry",
-    description: "Najdu pro vás nejvýhodnější financování bydlení. Srovnávám nabídky od více než 10 bank a zajistím vám nejlepší podmínky. Pomohu i s refinancováním stávající hypotéky.",
+    description: "Najdu nejlepší hypotéku ze všech bank. Vyřídím vše za vás – ušetříte čas i peníze. Pomohu i s refinancováním, když máte nevýhodné podmínky.",
     benefits: [
-      "Srovnání nabídek od 10+ bank",
-      "Vyjednání individuálních podmínek",
-      "Kompletní vyřízení žádosti",
-      "Refinancování stávajících hypoték",
+      "Srovnání nabídek od všech bank",
+      "Vyjednání lepších podmínek",
+      "Kompletní vyřízení za vás",
+      "Refinancování stávající hypotéky",
       "Poradenství při koupi nemovitosti",
       "Spotřebitelské úvěry",
     ],
     forWhom: "Pro každého, kdo plánuje koupi nebo rekonstrukci nemovitosti.",
-    notForWhom: "Pro ty, kdo nemají stabilní příjem nebo negativní záznam v registru.",
+    notForWhom: "Pro ty, kdo mají negativní záznam v registru dlužníků.",
   },
   {
     id: "ostatni",
     icon: HelpCircle,
     title: "Ostatní služby",
-    description: "Potřebujete poradit s něčím, co nespadá do běžných kategorií? Nabízím individuální konzultace pro speciální případy. Hodinová sazba je 2 500 Kč/hodinu.",
+    description: "Potřebujete poradit s něčím konkrétním? Individuální konzultace na míru vaší situaci. Hodinová sazba je 2 500 Kč.",
     benefits: [
       "Individuální finanční konzultace",
-      "Řešení nestandardních situací",
-      "Druhý názor na finanční rozhodnutí",
+      "Druhý názor na důležité rozhodnutí",
       "Pomoc s finančními dokumenty",
+      "Řešení nestandardních situací",
       "Vzdělávací konzultace",
       "Hodinová sazba 2 500 Kč",
     ],
-    forWhom: "Pro každého, kdo potřebuje profesionální radu mimo standardní služby.",
+    forWhom: "Pro každého, kdo potřebuje profesionální pohled na svou situaci.",
     notForWhom: "Pro ty, kdo hledají bezplatné poradenství.",
+  },
+  {
+    id: "vzdelavani",
+    icon: GraduationCap,
+    title: "Finanční vzdělávání",
+    description: "Jako jediná společnost v ČR vzděláváme veřejnost už 30 let. Přes 300 000 vyškolených účastníků v Česku i na Slovensku. Naučíme vás rozumět penězům.",
+    benefits: [
+      "Celodenní seminář s odborníky",
+      "Pochopíte, jak fungují finanční produkty",
+      "Naučíte se poznat kvalitu od předraženého balastu",
+      "Studijní materiály, káva a oběd v ceně",
+      "Mezinárodní certifikát IES",
+      "30 let zkušeností se vzděláváním",
+    ],
+    forWhom: "Pro každého, kdo chce rozumět financím a dělat lepší rozhodnutí.",
+    notForWhom: "Pro ty, kdo hledají rychlé zbohatnutí bez práce.",
   },
 ];
 
@@ -177,14 +193,14 @@ const ServicesPage = () => {
                 Služby
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-                Komplexní finanční{" "}
+                Finance nemusí být{" "}
                 <span className="text-gradient bg-gradient-to-r from-primary to-accent">
-                  poradenství
+                  složité
                 </span>
               </h1>
               <p className="text-muted-foreground text-lg max-w-2xl">
-                Nabízím široké spektrum finančních služeb v regionu Žďár nad Sázavou a celé Vysočiny, 
-                vždy přizpůsobených vašim konkrétním potřebám. Nezávisle vybírám z nabídek více než 50 partnerů.
+                Ať řešíte hypotéku, pojištění nebo jak rozumně investovat – vysvětlím vám vše 
+                srozumitelně a najdeme řešení na míru. Nezávisle vybírám z nabídek více než 50 partnerů.
               </p>
             </AnimatedSection>
           </div>
@@ -281,11 +297,11 @@ const ServicesPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Nejste si jistí, co potřebujete?
+              Nevíte, kde začít?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně najdeme optimální řešení 
-              pro vaši situaci. První schůzka je vždy zdarma a nezávazná.
+              Domluvte si nezávaznou schůzku a probereme, co vás trápí. 
+              První konzultace je zdarma – žádné závazky, žádný tlak.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" asChild>
