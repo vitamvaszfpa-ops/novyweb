@@ -16,52 +16,40 @@ import { AnimatedSection, StaggerChildren, StaggerItem } from "@/components/Anim
 
 const services = [
   {
+    icon: Home,
+    title: "Hypotéky a úvěry",
+    description: "Kupujete byt nebo dům? Pomohu vám najít nejlepší hypotéku ze všech bank – nemusíte obíhat pobočky.",
+    href: "/sluzby/hypoteky",
+  },
+  {
     icon: Shield,
-    title: "Pojištění",
-    description: "Životní, majetkové, firemní, odpovědnostní, cestovní pojištění. Komplexní ochrana pro vás, rodinu i firmu.",
-    href: "/sluzby#pojisteni",
+    title: "Pojištění domácnosti a rodiny",
+    description: "Chráním to, na čem vám záleží – domov, auto, zdraví. Bez zbytečného přepojištění a za rozumnou cenu.",
+    href: "/sluzby/pojisteni",
   },
   {
     icon: TrendingUp,
-    title: "Investice",
-    description: "FKI, investiční zlato, podílové fondy, realitní fondy, participace. Investujte od 500 Kč měsíčně až po milionové vklady.",
-    href: "/sluzby#investice",
-  },
-  {
-    icon: Briefcase,
-    title: "Finanční plánování",
-    description: "Komplexní pohled na vaše finance. Vytvoříme plán, který vám pomůže dosáhnout životních cílů.",
-    href: "/sluzby#financni-planovani",
-  },
-  {
-    icon: Building2,
-    title: "Reality",
-    description: "Koupě, prodej, financování, pronájem, asistovaný nákup. Kompletní realitní servis profesionálně a lokálně.",
-    href: "/sluzby#reality",
+    title: "Investice a zhodnocení peněz",
+    description: "Aby vaše peníze neztrácely hodnotu. Od pravidelného spoření po větší investice – podle toho, co vám vyhovuje.",
+    href: "/sluzby/investice",
   },
   {
     icon: PiggyBank,
-    title: "Důchodové spoření",
-    description: "Připravte se na klidný důchod. Penzijní spoření propojené s investicemi pro maximální výnos.",
-    href: "/sluzby#duchodove-sporeni",
+    title: "Spoření na důchod",
+    description: "Státní důchod sám o sobě nestačí. Ukážu vám, jak se připravit, abyste si v penzi mohli užívat.",
+    href: "/sluzby/duchodove-sporeni",
   },
   {
     icon: ClipboardCheck,
-    title: "Penzijní audit",
-    description: "Na základě výstupu IOLDP z OSSZ uděláme rozbor chybějících dob a spočítáme váš budoucí důchod.",
-    href: "/sluzby#penzijni-audit",
+    title: "Audit smluv zdarma",
+    description: "Máte pojistky a spoření, ale nevíte, jestli jsou dobré? Projdeme je společně – bez závazků.",
+    href: "/sluzby/penzijni-audit",
   },
   {
-    icon: Home,
-    title: "Hypotéky a úvěry",
-    description: "Najdu pro vás nejvýhodnější financování bydlení. Srovnání nabídek od více bank.",
-    href: "/sluzby#hypoteky",
-  },
-  {
-    icon: HelpCircle,
-    title: "Ostatní služby",
-    description: "Cokoliv dalšího, co potřebujete vyřešit. Individuální konzultace za 2 500 Kč/hodinu.",
-    href: "/sluzby#ostatni",
+    icon: Building2,
+    title: "Pomoc s nemovitostmi",
+    description: "Prodáváte nebo kupujete nemovitost? Pomohu vám se vším – od odhadu ceny po právní služby.",
+    href: "/sluzby/reality",
   },
 ];
 
@@ -75,14 +63,13 @@ export const ServicesSection = () => {
         {/* Section header */}
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-primary text-xs font-semibold tracking-[0.2em] uppercase mb-4">
-            Služby
+            Jak vám mohu pomoct
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 font-bold">
-            Komplexní finanční poradenství
+            Finance nemusí být složité
           </h2>
           <p className="text-muted-foreground text-lg">
-            Nabízím široké spektrum finančních služeb v regionu Vysočina, vždy přizpůsobených 
-            vašim konkrétním potřebám a životní situaci.
+            Ať řešíte hypotéku na první byt, pojištění domácnosti nebo jak rozumně investovat – vysvětlím vám vše srozumitelně a najdeme řešení na míru.
           </p>
           <div className="section-divider mt-8" />
         </AnimatedSection>
