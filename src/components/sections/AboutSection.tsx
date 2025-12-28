@@ -4,20 +4,20 @@ import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/AnimatedSection";
 const values = [{
   icon: Target,
-  title: "Nezávislost",
-  description: "Pracuji s více než 50 finančními partnery. Vybírám to nejlepší pro vás, ne pro provizi."
+  title: "Nezávislý výběr",
+  description: "Spolupracuji s více než 50 bankami a pojišťovnami. Vybírám to nejlepší pro vás, ne pro provizi."
 }, {
   icon: Heart,
   title: "Osobní přístup",
-  description: "Každý klient je jedinečný. Řešení šiji na míru vaší životní situaci a cílům."
+  description: "Každý má jinou situaci. Proto řešení šiji na míru – ať jste jednotlivec, rodina nebo podnikatel."
 }, {
   icon: Award,
-  title: "Odbornost",
-  description: "Pravidelné vzdělávání, certifikace a sledování novinek v oboru finančního poradenství."
+  title: "Praxe 18+ let",
+  description: "Pomohl jsem stovkám klientů na Vysočině. Vím, co funguje a na co si dát pozor."
 }, {
   icon: Clock,
-  title: "Dlouhodobost",
-  description: "Nejsem tu jen pro jednorázový obchod. Buduji vztahy na celý život."
+  title: "Dlouhodobá péče",
+  description: "Nejsem tu jen pro jednorázový obchod. Starám se o vaše finance průběžně."
 }];
 export const AboutSection = () => {
   return <section className="py-24 relative overflow-hidden">
@@ -26,21 +26,22 @@ export const AboutSection = () => {
           {/* Content */}
           <AnimatedSection direction="left">
             <span className="inline-block text-primary text-xs font-semibold tracking-[0.2em] uppercase mb-4">
-              O mně
+              Proč spolupracovat se mnou
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 font-bold">
-              Váš partner na cestě k{" "}
+              Jeden člověk pro všechny{" "}
               <span className="text-gradient">
-                finanční svobodě
+                vaše finance
               </span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">Jsem finanční poradce a ředitel týmu v rámci ZFP GROUP. Více než 18 let pomáhám jednotlivcům i rodinám v regionu Vysočina činit promyšlená a dlouhodobě udržitelná finanční rozhodnutí.
-
-          </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Jsem finanční poradce ve Žďáře nad Sázavou. Přes 18 let pomáhám lidem na 
+              Vysočině zorientovat se ve financích – od hypotéky přes pojištění až po spoření na důchod.
+            </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Věřím, že kvalitní finanční poradenství by mělo být dostupné každému. 
-              Proto pracuji s transparentním přístupem, vysvětluji složité věci 
-              srozumitelně a vždy jednám ve vašem nejlepším zájmu.
+              Nejsem zaměstnanec banky ani pojišťovny. Proto vám mohu nabídnout to nejlepší 
+              z celého trhu. Vysvětlím vám vše srozumitelně a společně vybereme jen to, 
+              co skutečně potřebujete.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" className="btn-glow" asChild>
