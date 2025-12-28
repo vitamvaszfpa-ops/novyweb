@@ -11,45 +11,45 @@ const savingsFeatures = [
   {
     icon: Gift,
     title: "Státní příspěvek",
-    description: "Až 2 760 Kč ročně od státu. Maximální příspěvek při vkladu 1 000 Kč měsíčně.",
+    description: "Stát vám přidá až 2 760 Kč ročně. Zadarmo. Stačí spořit 1 000 Kč měsíčně a máte maximum. Kde jinde dostanete 23% výnos bez rizika?",
   },
   {
     icon: Building2,
     title: "Příspěvek zaměstnavatele",
-    description: "Daňově výhodný benefit. Zaměstnavatel ušetří na odvodech, vy získáte extra peníze.",
+    description: "Hodně zaměstnavatelů přispívá na penzijko. Vy dostanete peníze navíc, firma ušetří na odvodech. Win-win, ale musíte o to požádat.",
   },
   {
     icon: Calculator,
     title: "Daňové výhody",
-    description: "Odpočet až 48 000 Kč z daňového základu ročně. Reálná úspora tisíce korun.",
+    description: "Odečtěte si až 48 000 Kč z daní ročně. Při sazbě 23 % to je přes 11 000 Kč zpátky. Peníze, které byste jinak dali státu.",
   },
   {
     icon: TrendingUp,
     title: "Investiční zhodnocení",
-    description: "Propojení s investičními strategiemi pro maximální výnos vašich úspor.",
+    description: "Penzijko může být víc než jen spoření. Připojím k němu investiční strategii, aby peníze rostly rychleji než inflace.",
   },
   {
     icon: Calendar,
     title: "Flexibilita",
-    description: "Možnost přerušení spoření, změny výše příspěvků i předčasného výběru.",
+    description: "Můžete přerušit, změnit částku, v nouzi i vybrat. Není to past – jen chytrý nástroj pro budoucnost.",
   },
 ];
 
 const benefits = [
-  "Penzijní spoření se státním příspěvkem",
-  "Propojení s investičními produkty",
-  "Optimalizace daňových výhod",
-  "Příspěvky zaměstnavatele",
-  "Výpočet potřebné úspory na důchod",
-  "Pravidelná revize a úpravy",
+  "Nastavím penzijko tak, abyste dostali maximum od státu",
+  "Vyřídím příspěvky od zaměstnavatele, pokud je nabízí",
+  "Optimalizuju daňové výhody – ušetříte tisíce ročně",
+  "Propojím to s investicemi pro vyšší výnosy",
+  "Spočítám, kolik budete mít v důchodu",
+  "18 let zkušeností s penzijním plánováním",
 ];
 
 const RetirementSavingsPage = () => {
   return (
     <Layout>
       <SEO
-        title="Důchodové spoření Žďár nad Sázavou - Penzijní spoření, příprava na důchod | ZFP Group"
-        description="Příprava na důchod na Vysočině. Penzijní spoření se státním příspěvkem, daňové výhody, propojení s investicemi. Spočítejte si, kolik potřebujete. Konzultace zdarma."
+        title="Penzijní spoření Žďár nad Sázavou | Státní příspěvky, daňové výhody | Roman Hájek"
+        description="Chcete mít v důchodu víc než jen státní penzi? Za 18 let jsem pomohl stovkám lidí ze Žďáru připravit se na důchod. Využijte státní příspěvky a daňové výhody. Konzultace zdarma."
         canonical="/sluzby/duchodove-sporeni"
       />
       <BreadcrumbSchema
@@ -77,13 +77,14 @@ const RetirementSavingsPage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Připravte se na klidný důchod. Pomohu vám s penzijním spořením, které využívá 
-                státní příspěvky, daňové výhody a efektivní investování pro maximální výnos.
+                Státní důchod vám na slušný život stačit nebude. To není strašení, to je 
+                matematika. Dobrá zpráva? Stát vám na spoření přidá tisíce ročně, jen to 
+                musíte správně nastavit.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci nastavit penzijko
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -98,11 +99,11 @@ const RetirementSavingsPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Výhody důchodového spoření
+              Co všechno můžete získat
             </h2>
             <p className="text-muted-foreground text-lg">
-              Důchodové spoření není jen o odkládání peněz. Je to chytrý nástroj, 
-              který vám pomůže získat maximum díky státním příspěvkům a daňovým výhodám.
+              Penzijní spoření není jen o odkládání peněz. Je to nástroj, který – když ho 
+              správně nastavíte – vám dá tisíce korun ročně navíc. Zdarma.
             </p>
           </AnimatedSection>
 
@@ -134,23 +135,23 @@ const RetirementSavingsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-                Kolik potřebujete na důchod?
+                Kolik budete v důchodu potřebovat?
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Státní důchod pokryje jen část vašich potřeb. Abyste si udrželi životní 
-                  úroveň, potřebujete mít vlastní rezervy. Čím dříve začnete spořit, 
-                  tím méně musíte odkládat.
+                  Průměrný důchod je dnes kolem 20 000 Kč. Za 20-30 let bude nominálně vyšší, 
+                  ale koupíte si za něj méně. Pokud chcete žít stejně jako teď, potřebujete 
+                  vlastní rezervy.
                 </p>
                 <p>
-                  Společně spočítáme, kolik potřebujete naspořit a jaká strategie vám 
-                  to umožní dosáhnout. Propojíme penzijní spoření s investicemi pro 
-                  maximální efekt.
+                  Čím dříve začnete, tím méně musíte měsíčně odkládat. Díky složenému úročení 
+                  pracuje čas pro vás. Tisícovka měsíčně od třiceti je víc než tři tisíce 
+                  od padesáti.
                 </p>
                 <p>
-                  Nezapomínáme ani na příspěvky zaměstnavatele – pokud je váš zaměstnavatel 
-                  nabízí, pomůžu vám je optimálně využít. A pokud ne, ukážeme možnosti, 
-                  jak ho přesvědčit.
+                  Společně spočítáme, kolik potřebujete. Nastavíme penzijko tak, abyste 
+                  dostali maximum od státu i zaměstnavatele. A propojíme to s investicemi, 
+                  aby peníze rostly.
                 </p>
               </div>
             </AnimatedSection>
@@ -159,7 +160,7 @@ const RetirementSavingsPage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -185,14 +186,14 @@ const RetirementSavingsPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Každý, kdo chce mít zajištěnou budoucnost</li>
-                    <li>• Zaměstnanci, kteří mohou využít příspěvky zaměstnavatele</li>
-                    <li>• OSVČ, kteří nemají zaměstnanecké benefity</li>
-                    <li>• Lidé, kteří chtějí využít daňové výhody</li>
-                    <li>• Každý od 18 let věku</li>
+                    <li>• Zaměstnanci – využijte příspěvky od firmy</li>
+                    <li>• OSVČ – nemáte firemní benefity, musíte si poradit sami</li>
+                    <li>• Každý od 18 let – čím dříve, tím lépe</li>
+                    <li>• Rodiče – založte penzijko dětem, ať mají náskok</li>
+                    <li>• Kdokoli, kdo chce využít daňové výhody</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -203,12 +204,12 @@ const RetirementSavingsPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo odmítají myslet na budoucnost</li>
-                    <li>• Pro ty, kdo potřebují peníze okamžitě k dispozici</li>
-                    <li>• Pro ty, kdo již mají dostatečné zajištění na důchod</li>
+                    <li>• Odmítáte myslet na budoucnost</li>
+                    <li>• Potřebujete peníze k dispozici hned</li>
+                    <li>• Už máte důchod dostatečně zajištěný</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -222,16 +223,16 @@ const RetirementSavingsPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Začněte plánovat svůj důchod
+              Nevyhazujte peníze, které vám stát dává zadarmo
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně vytvoříme strategii pro váš 
-              klidný důchod. První schůzka je vždy zdarma a nezávazná.
+              Tisíce lidí nevyužívají státní příspěvky a daňové úlevy, na které mají nárok. 
+              Sejdeme se a nastavíme to správně. Schůzka je zdarma.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci konzultaci zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
