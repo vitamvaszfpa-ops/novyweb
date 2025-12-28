@@ -11,45 +11,45 @@ const auditSteps = [
   {
     icon: FileText,
     title: "Získání IOLDP",
-    description: "Pomůžu vám získat Informativní osobní list důchodového pojištění z OSSZ.",
+    description: "Pomůžu vám získat výpis z evidence důchodového pojištění. Ukáže, co o vás stát ví.",
   },
   {
     icon: FileSearch,
-    title: "Analýza historie",
-    description: "Projdu vaši pracovní historii a identifikuji všechny doby pojištění.",
+    title: "Kontrola historie",
+    description: "Projdu vaši pracovní historii rok po roku. Hledám mezery a nesrovnalosti.",
   },
   {
     icon: AlertCircle,
-    title: "Identifikace chyb",
-    description: "Zjistím, které doby chybí nebo jsou špatně evidované.",
+    title: "Nalezení chyb",
+    description: "Evidence ČSSZ není bezchybná. Zjistím, které doby chybí nebo jsou špatně.",
   },
   {
     icon: HelpCircle,
-    title: "Návrh řešení",
-    description: "Poradím, jak chybějící doby doložit a co je potřeba udělat.",
+    title: "Co s tím",
+    description: "Poradím, jak chybějící doby doložit. Které dokumenty potřebujete a kde je vzít.",
   },
   {
     icon: Calculator,
     title: "Výpočet důchodu",
-    description: "Spočítám, jaký důchod byste měli mít v nároku podle aktuálních pravidel.",
+    description: "Spočítám, jaký důchod byste měli dostat podle aktuálních pravidel.",
   },
 ];
 
 const benefits = [
-  "Analýza výstupu IOLDP z OSSZ",
+  "Analýza vašeho výpisu z ČSSZ",
   "Identifikace chybějících dob pojištění",
-  "Poradenství, co a jak doložit",
+  "Poradenství, jak chyby opravit",
   "Výpočet předpokládaného důchodu",
-  "Návrhy, jak situaci zlepšit",
-  "Příprava na komunikaci s ČSSZ",
+  "Návrhy, jak důchod zvýšit",
+  "18 let zkušeností s penzijním systémem",
 ];
 
 const PensionAuditPage = () => {
   return (
     <Layout>
       <SEO
-        title="Penzijní audit Žďár nad Sázavou - Kontrola důchodových nároků, IOLDP analýza | ZFP Group"
-        description="Profesionální penzijní audit na Vysočině. Analýza IOLDP, identifikace chybějících dob pojištění, výpočet důchodu. Zjistěte, na jaký důchod máte nárok. Konzultace zdarma."
+        title="Penzijní audit Žďár nad Sázavou | Kontrola důchodových nároků | Roman Hájek"
+        description="Nevíte, jaký budete mít důchod? Zkontroluju vaši evidenci u ČSSZ a najdu chybějící doby pojištění. Za 18 let vím, kde hledat. Konzultace zdarma."
         canonical="/sluzby/penzijni-audit"
       />
       <BreadcrumbSchema
@@ -77,13 +77,13 @@ const PensionAuditPage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Na základě výstupu IOLDP z OSSZ uděláme detailní rozbor vaší pracovní historie. 
-                Zjistíme, které doby vám chybí, a spočítáme, jaký důchod byste měli mít v nároku.
+                Evidence ČSSZ není bezchybná. Chybějící roky pojištění znamenají nižší důchod. 
+                Zkontroluju vaši historii a najdu, co chybí – dokud je ještě čas to napravit.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci zkontrolovat důchod
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -101,8 +101,8 @@ const PensionAuditPage = () => {
               Jak penzijní audit probíhá
             </h2>
             <p className="text-muted-foreground text-lg">
-              Penzijní audit je systematický proces, který vám dá jasný přehled o vašich 
-              důchodových nárocích a pomůže vám je maximalizovat.
+              Systematicky projdeme vaši pracovní historii a zjistíme, jestli máte 
+              všechno správně zaevidované.
             </p>
           </AnimatedSection>
 
@@ -137,23 +137,22 @@ const PensionAuditPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-                Proč je penzijní audit důležitý?
+                Proč to řešit teď?
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Evidence České správy sociálního zabezpečení není vždy bezchybná. Chybějící 
-                  doby pojištění – ať už kvůli chybě zaměstnavatele nebo neúplným záznamům – 
-                  mohou výrazně snížit váš budoucí důchod.
+                  Spousta lidí zjistí problém až když žádají o důchod. Pak je pozdě. 
+                  Dokumenty jsou ztracené, firmy neexistují, svědci si nepamatují. 
+                  Oprava trvá měsíce a někdy se nepovede.
                 </p>
                 <p>
-                  Čím dříve chyby odhalíte, tím snáze je opravíte. S odstupem let je těžší 
-                  shánět dokumenty a doklady. Proto je dobré provést audit i v mladším věku, 
-                  nejen před důchodem.
+                  Čím dříve to zkontrolujete, tím snáze se případné chyby opraví. 
+                  Máte čas sehnat dokumenty, kontaktovat bývalé zaměstnavatele, 
+                  případně doplatit chybějící pojištění.
                 </p>
                 <p>
-                  Penzijní audit vám také ukáže, jak se váš důchod počítá, a co můžete udělat 
-                  pro jeho zvýšení – například dobrovolným důchodovým pojištěním nebo optimalizací 
-                  zbývajících let.
+                  A taky se dozvíte, jaký důchod můžete čekat. Možná vás to překvapí – 
+                  v dobrém i špatném. Lepší vědět teď a mít čas reagovat.
                 </p>
               </div>
             </AnimatedSection>
@@ -162,7 +161,7 @@ const PensionAuditPage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -188,14 +187,14 @@ const PensionAuditPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Lidé blížící se důchodovému věku</li>
-                    <li>• Ti, kdo měli složitou pracovní historii</li>
-                    <li>• Lidé, kteří pracovali v zahraničí</li>
-                    <li>• OSVČ a podnikatelé</li>
-                    <li>• Každý, kdo chce mít přehled o svých nárocích</li>
+                    <li>• Blížíte se důchodovému věku</li>
+                    <li>• Měli jste složitou pracovní historii</li>
+                    <li>• Pracovali jste v zahraničí</li>
+                    <li>• Podnikali jste jako OSVČ</li>
+                    <li>• Chcete vědět, na co máte nárok</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -206,12 +205,12 @@ const PensionAuditPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo nemají zájem o kontrolu svých nároků</li>
-                    <li>• Pro ty, kdo mají jednoduchý průběžný pracovní život</li>
-                    <li>• Pro velmi mladé lidi bez pracovní historie</li>
+                    <li>• Nemáte zájem o kontrolu svých nároků</li>
+                    <li>• Máte jednoduchou pracovní historii u jednoho zaměstnavatele</li>
+                    <li>• Jste velmi mladí bez pracovní historie</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -228,13 +227,13 @@ const PensionAuditPage = () => {
               Zjistěte, na jaký důchod máte nárok
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně projdeme vaši pracovní historii. 
-              První schůzka je vždy zdarma a nezávazná.
+              Přineste mi výpis z ČSSZ a za hodinu budete vědět, jak na tom jste. 
+              Schůzka je zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci konzultaci zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

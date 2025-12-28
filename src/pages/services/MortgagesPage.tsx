@@ -11,46 +11,46 @@ import MortgageCalculator from "@/components/MortgageCalculator";
 const mortgageServices = [
   {
     icon: Home,
-    title: "Hypotéky na bydlení",
-    description: "Financování koupě bytu, domu nebo pozemku. Srovnání nabídek od 10+ bank.",
+    title: "Hypotéka na bydlení",
+    description: "Chcete koupit byt nebo dům ve Žďáře nebo na Vysočině? Srovnám nabídky od 10+ bank a zajistím vám podmínky, které byste sami nedostali.",
   },
   {
     icon: Building2,
-    title: "Hypotéky na rekonstrukci",
-    description: "Financování stavebních úprav a modernizace stávající nemovitosti.",
+    title: "Hypotéka na rekonstrukci",
+    description: "Plánujete předělat koupelnu, zateplit dům nebo přistavět? Pomůžu vám získat peníze na úpravy stávající nemovitosti.",
   },
   {
     icon: RefreshCw,
-    title: "Refinancování",
-    description: "Přechod k výhodnější hypotéce. Pomůžu vám ušetřit na úrocích.",
+    title: "Refinancování hypotéky",
+    description: "Platíte za hypotéku víc, než byste museli? Zjistím, jestli se vám vyplatí přejít k jiné bance, a všechno za vás vyřídím.",
   },
   {
     icon: CreditCard,
     title: "Spotřebitelské úvěry",
-    description: "Menší úvěry bez zástavy nemovitosti. Pro rychlejší financování.",
+    description: "Potřebujete menší částku bez zástavy nemovitosti? Najdu vám úvěr s rozumnými podmínkami – žádné lichvářské půjčky.",
   },
   {
     icon: TrendingDown,
     title: "Konsolidace úvěrů",
-    description: "Sloučení více půjček do jedné s nižší splátkou a lepší přehledností.",
+    description: "Máte víc půjček a ztrácíte přehled? Sloučím je do jedné s nižší splátkou. Konečně budete vědět, kolik platíte.",
   },
 ];
 
 const benefits = [
-  "Srovnání nabídek od 10+ bank",
-  "Vyjednání individuálních podmínek",
-  "Kompletní vyřízení žádosti",
-  "Refinancování stávajících hypoték",
-  "Poradenství při koupi nemovitosti",
-  "Spotřebitelské úvěry",
+  "Srovnání nabídek od 10+ bank na jednom místě",
+  "Vyjednám vám lepší úrok, než byste dostali na pobočce",
+  "Všechnu papírovou práci vyřídím za vás",
+  "Poradím i s pojištěním nemovitosti",
+  "Konzultace zdarma – platí až banka",
+  "18 let zkušeností s hypotékami na Vysočině",
 ];
 
 const MortgagesPage = () => {
   return (
     <Layout>
       <SEO
-        title="Hypotéky a úvěry Žďár nad Sázavou - Nejlepší podmínky, srovnání bank | ZFP Group"
-        description="Hypoteční poradenství na Vysočině. Srovnání nabídek od 10+ bank, refinancování, spotřebitelské úvěry. Najdu vám nejlepší podmínky. Konzultace zdarma."
+        title="Hypotéky Žďár nad Sázavou | Srovnání bank, lepší úrok | Roman Hájek"
+        description="Hledáte hypotéku ve Žďáře nad Sázavou? Za 18 let jsem pomohl stovkám rodin na Vysočině. Srovnám 10+ bank, vyjednám lepší úrok a všechno vyřídím za vás. Konzultace zdarma."
         canonical="/sluzby/hypoteky"
       />
       <BreadcrumbSchema
@@ -78,13 +78,14 @@ const MortgagesPage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Najdu pro vás nejvýhodnější financování bydlení. Srovnávám nabídky od více než 
-                10 bank a zajistím vám nejlepší podmínky. Pomohu i s refinancováním.
+                Kupujete byt, stavíte dům nebo chcete refinancovat? Srovnám pro vás nabídky od 10+ bank 
+                a vyjednám podmínky, které byste sami nedostali. Za 18 let jsem pomohl stovkám rodin 
+                ze Žďáru a okolí.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci nezávaznou konzultaci
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -100,11 +101,11 @@ const MortgagesPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Úvěrové produkty, které nabízím
+              S čím vám můžu pomoct
             </h2>
             <p className="text-muted-foreground text-lg">
-              Ať už kupujete první byt, stavíte dům nebo chcete refinancovat stávající hypotéku – 
-              najdu pro vás optimální řešení.
+              Ať už kupujete první byt, stavíte rodinný dům nebo chcete ušetřit na stávající hypotéce – 
+              najdu řešení, které vám sedne.
             </p>
           </AnimatedSection>
 
@@ -136,22 +137,22 @@ const MortgagesPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-                Jak funguje hypoteční poradenství?
+                Proč hypotéku neřešit sám na pobočce?
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Jako nezávislý poradce nejsem vázán na jednu banku. Srovnávám nabídky od více 
-                  než 10 bank a vyjednávám individuální podmínky, které byste jako jednotlivec 
-                  nezískali.
+                  Když přijdete do banky, nabídnou vám svou hypotéku. Možná slušnou, možná ne. 
+                  Neřeknou vám, že konkurence má lepší úrok nebo méně poplatků. Proč by taky měli?
                 </p>
                 <p>
-                  Celý proces vyřídím za vás – od prvního výpočtu přes sběr dokumentů až po 
-                  podpis smlouvy. Vy se můžete soustředit na hledání nemovitosti, já se postarám 
-                  o financování.
+                  Já nejsem vázaný na jednu banku. Srovnám nabídky od více než 10 bank a vyjednám 
+                  vám individuální podmínky. Díky objemu, který zprostředkovávám, dostanu lepší 
+                  úroky než náhodný klient z ulice.
                 </p>
                 <p>
-                  Mé služby jsou pro vás zdarma – odměnu dostávám od banky. Vy získáte lepší 
-                  podmínky, než byste dostali přímo na pobočce, a ušetříte čas i starosti.
+                  A hlavně – všechnu tu papírovou práci udělám za vás. Vy se můžete věnovat 
+                  hledání nemovitosti, já se postarám o financování. A mé služby? Ty jsou 
+                  pro vás zdarma – odměnu dostávám od banky.
                 </p>
               </div>
             </AnimatedSection>
@@ -160,7 +161,7 @@ const MortgagesPage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -186,14 +187,14 @@ const MortgagesPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Každý, kdo plánuje koupi nemovitosti</li>
-                    <li>• Ti, kdo staví nebo rekonstruují</li>
-                    <li>• Lidé s hypotékou, kteří chtějí ušetřit</li>
-                    <li>• Ti, kdo potřebují spotřebitelský úvěr</li>
-                    <li>• Každý, kdo chce nejlepší podmínky</li>
+                    <li>• Kupujete první byt nebo dům</li>
+                    <li>• Stavíte nebo rekonstruujete</li>
+                    <li>• Chcete refinancovat a ušetřit</li>
+                    <li>• Potřebujete spotřebitelský úvěr</li>
+                    <li>• Máte víc půjček a chcete je sloučit</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -204,12 +205,12 @@ const MortgagesPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo nemají stabilní příjem</li>
-                    <li>• Pro ty s negativním záznamem v registru dlužníků</li>
-                    <li>• Pro ty, kdo hledají rychlé půjčky bez dokumentace</li>
+                    <li>• Nemáte stabilní příjem (zaměstnání nebo podnikání)</li>
+                    <li>• Máte záznam v registru dlužníků</li>
+                    <li>• Hledáte "rychlou půjčku bez dokladů" – to nedělám</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -223,16 +224,16 @@ const MortgagesPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Připraveni financovat svůj sen?
+              Pojďme to probrat
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně najdeme nejlepší hypotéku pro vás. 
-              První schůzka je vždy zdarma a nezávazná.
+              Zavolejte mi nebo napište a domluvíme se na schůzce. Ať už osobně ve Žďáře, 
+              nebo online. První konzultace je zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci konzultaci zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

@@ -10,46 +10,46 @@ import { AnimatedSection, StaggerChildren, StaggerItem } from "@/components/Anim
 const planningSteps = [
   {
     icon: Target,
-    title: "Analýza současné situace",
-    description: "Zmapujeme vaše příjmy, výdaje, aktiva a závazky. Získáte jasný přehled o tom, kde stojíte.",
+    title: "Kde teď jste",
+    description: "Projdeme vaše příjmy, výdaje, majetek a dluhy. Získáte jasný obrázek o tom, jak na tom skutečně jste.",
   },
   {
     icon: Calendar,
-    title: "Definice cílů",
-    description: "Společně určíme vaše krátkodobé i dlouhodobé finanční cíle a priority.",
+    title: "Kam chcete",
+    description: "Co chcete v životě dosáhnout? Vlastní bydlení? Klidný důchod? Vzdělání pro děti? Pojmenujeme vaše cíle.",
   },
   {
     icon: TrendingUp,
-    title: "Návrh strategie",
-    description: "Vytvořím komplexní plán, jak dosáhnout vašich cílů s optimálním využitím zdrojů.",
+    title: "Jak se tam dostat",
+    description: "Vytvořím plán, který vás k cílům dovede. Konkrétní kroky, ne obecné fráze.",
   },
   {
     icon: PiggyBank,
-    title: "Implementace",
-    description: "Pomohu vám uvést plán do praxe – výběr produktů, nastavení spoření, investic.",
+    title: "Uvedení do praxe",
+    description: "Neodejdete jen s papírem. Pomůžu vám vybrat konkrétní produkty a všechno nastavit.",
   },
   {
     icon: Shield,
-    title: "Pravidelná revize",
-    description: "Vaši situaci průběžně sledujeme a plán upravujeme podle změn v životě.",
+    title: "Pravidelná kontrola",
+    description: "Život se mění. Jednou ročně se potkáme a plán upravíme podle aktuální situace.",
   },
 ];
 
 const benefits = [
-  "Komplexní pohled na vaše finance",
-  "Jasná strategie pro dosažení cílů",
-  "Optimalizace výdajů a příjmů",
-  "Propojení všech finančních produktů",
-  "Pravidelné revize a úpravy",
-  "Dlouhodobá spolupráce a podpora",
+  "Jasný přehled o vašich financích",
+  "Konkrétní plán, jak dosáhnout cílů",
+  "Optimalizace – možná platíte za věci, které nepotřebujete",
+  "Propojení všech finančních produktů dohromady",
+  "Pravidelné revize – plán roste s vámi",
+  "18 let zkušeností s finančním plánováním",
 ];
 
 const FinancialPlanningPage = () => {
   return (
     <Layout>
       <SEO
-        title="Finanční plánování Žďár nad Sázavou - Komplexní finanční poradenství | ZFP Group"
-        description="Profesionální finanční plánování na Vysočině. Analýza financí, definice cílů, komplexní strategie. Pomohu vám dosáhnout životních snů. Konzultace zdarma."
+        title="Finanční plánování Žďár nad Sázavou | Komplexní poradenství | Roman Hájek"
+        description="Nevíte, jestli na tom finančně jste dobře? Za 18 let jsem pomohl stovkám rodin ze Žďáru udělat si jasno. Komplexní finanční plán na míru. Konzultace zdarma."
         canonical="/sluzby/financni-planovani"
       />
       <BreadcrumbSchema
@@ -77,13 +77,13 @@ const FinancialPlanningPage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Komplexní pohled na vaše finance. Analyzuji vaši současnou situaci, definuji s vámi 
-                cíle a vytvořím plán, který vám pomůže dosáhnout vašich životních snů.
+                Máte pojištění, penzijko, možná nějaké investice. Ale dává to dohromady smysl? 
+                Finanční plán spojí všechny kousky do celku a ukáže vám cestu k vašim cílům.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci finanční plán
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -98,11 +98,11 @@ const FinancialPlanningPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Jak finanční plánování probíhá
+              Jak to probíhá
             </h2>
             <p className="text-muted-foreground text-lg">
-              Finanční plánování je proces, ne jednorázová akce. Společně projdeme těmito kroky 
-              a budujeme vaši finanční budoucnost.
+              Finanční plánování není jednorázová akce, ale proces. Tady jsou kroky, 
+              kterými spolu projdeme.
             </p>
           </AnimatedSection>
 
@@ -141,17 +141,17 @@ const FinancialPlanningPage = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Bez jasného plánu je těžké dosáhnout finančních cílů. Finanční plán vám dává 
-                  směr, priority a konkrétní kroky, jak se dostat tam, kde chcete být.
+                  Většina lidí řeší finance po kouskách. Pojištění tady, penzijko tam, 
+                  nějaké spoření stranou. Ale nikdo se nepodíval na celek. Možná platíte 
+                  za věci, které nepotřebujete. Možná vám něco důležitého chybí.
                 </p>
                 <p>
-                  Plán propojuje všechny aspekty vašich financí – od spoření přes investice 
-                  až po pojištění. Díky tomu víte, že všechny části spolupracují a směřují 
-                  ke stejným cílům.
+                  Finanční plán vám dá jasný přehled. Uvidíte, kde jste, kam směřujete 
+                  a co potřebujete udělat. Žádné hádání – konkrétní čísla a kroky.
                 </p>
                 <p>
-                  Nejde o jednorázovou konzultaci, ale o dlouhodobé partnerství. Život přináší 
-                  změny – nová práce, rodina, dědictví – a váš plán se musí těmto změnám přizpůsobit.
+                  A není to jednorázová věc. Život se mění – nová práce, děti, dědictví. 
+                  Plán musí držet krok. Proto se pravidelně potkáváme a upravujeme ho.
                 </p>
               </div>
             </AnimatedSection>
@@ -160,7 +160,7 @@ const FinancialPlanningPage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -186,14 +186,14 @@ const FinancialPlanningPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Každý, kdo chce mít jasný přehled o svých financích</li>
-                    <li>• Mladé páry zakládající rodinu</li>
-                    <li>• Lidé plánující velké investice (bydlení, vzdělání)</li>
-                    <li>• Ti, kdo chtějí optimalizovat své příjmy a výdaje</li>
-                    <li>• Každý, kdo myslí na budoucnost</li>
+                    <li>• Chcete mít jasno ve svých financích</li>
+                    <li>• Zakládáte rodinu a potřebujete plán</li>
+                    <li>• Plánujete velkou investici (bydlení, vzdělání)</li>
+                    <li>• Máte pocit, že platíte za zbytečnosti</li>
+                    <li>• Chcete se připravit na budoucnost</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -204,12 +204,12 @@ const FinancialPlanningPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo hledají rychlé řešení bez dlouhodobé spolupráce</li>
-                    <li>• Pro ty, kdo nechtějí sdílet informace o svých financích</li>
-                    <li>• Pro ty, kdo očekávají zázračné řešení bez vlastního úsilí</li>
+                    <li>• Hledáte jednorázové řešení bez dlouhodobé spolupráce</li>
+                    <li>• Nechcete sdílet informace o svých financích</li>
+                    <li>• Čekáte zázrak bez vlastního úsilí</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -223,16 +223,16 @@ const FinancialPlanningPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Připraveni na cestu k finančním cílům?
+              Udělejte si jasno
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně vytvoříme plán, který vás dovede 
-              k vašim životním snům. První schůzka je vždy zdarma a nezávazná.
+              Sejdeme se a projdeme vaši situaci. Za hodinu budete vědět, na čem jste 
+              a co dělat dál. Schůzka je zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci konzultaci zdarma
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

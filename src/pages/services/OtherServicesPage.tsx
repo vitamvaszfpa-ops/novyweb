@@ -11,36 +11,36 @@ const otherServices = [
   {
     icon: MessageCircle,
     title: "Individuální konzultace",
-    description: "Osobní schůzka zaměřená na vaše konkrétní otázky a situaci.",
+    description: "Máte konkrétní otázku? Sejdeme se a probereme přesně to, co potřebujete. Žádné zbytečné řeči.",
   },
   {
     icon: Scale,
     title: "Druhý názor",
-    description: "Nezávislé posouzení finančního rozhodnutí, které plánujete nebo jste již udělali.",
+    description: "Někdo vám něco nabídl a nevíte, jestli je to dobrý deal? Podívám se na to nezávisle a řeknu vám svůj názor.",
   },
   {
     icon: FileQuestion,
     title: "Pomoc s dokumenty",
-    description: "Vysvětlení a kontrola finančních smluv a dokumentů, kterým nerozumíte.",
+    description: "Máte smlouvu a nerozumíte jí? Přineste mi ji a vysvětlím vám, co tam je a na co si dát pozor.",
   },
   {
     icon: Lightbulb,
-    title: "Vzdělávací konzultace",
-    description: "Naučte se lépe rozumět financím. Vysvětlím vám základy investování, pojištění nebo hypoték.",
+    title: "Finanční vzdělávání",
+    description: "Chcete rozumět financím, ale nevíte, kde začít? Naučím vás základy – investování, pojištění, hypotéky.",
   },
   {
     icon: Users,
     title: "Rodinné finance",
-    description: "Konzultace pro celou rodinu – jak společně plánovat a komunikovat o penězích.",
+    description: "Jak spolu mluvit o penězích? Konzultace pro páry a rodiny, kteří chtějí táhnout za jeden provaz.",
   },
 ];
 
 const benefits = [
   "Individuální přístup na míru",
   "Řešení nestandardních situací",
-  "Druhý názor na finanční rozhodnutí",
-  "Pomoc s finančními dokumenty",
-  "Vzdělávací konzultace",
+  "Nezávislý druhý názor",
+  "Pomoc s dokumenty a smlouvami",
+  "Vzdělávání v oblasti financí",
   "Hodinová sazba 2 500 Kč",
 ];
 
@@ -48,8 +48,8 @@ const OtherServicesPage = () => {
   return (
     <Layout>
       <SEO
-        title="Ostatní finanční služby Žďár nad Sázavou - Konzultace, poradenství | ZFP Group"
-        description="Individuální finanční konzultace na Vysočině. Druhý názor, pomoc s dokumenty, vzdělávací konzultace. Pro vše, co nespadá do běžných kategorií. Hodinová sazba 2 500 Kč."
+        title="Finanční konzultace Žďár nad Sázavou | Druhý názor, pomoc s dokumenty | Roman Hájek"
+        description="Potřebujete poradit s něčím specifickým? Druhý názor, vysvětlení smlouvy, vzdělávání. Za 18 let jsem řešil i nestandardní situace. Hodinová sazba 2 500 Kč."
         canonical="/sluzby/ostatni"
       />
       <BreadcrumbSchema
@@ -77,8 +77,8 @@ const OtherServicesPage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Potřebujete poradit s něčím, co nespadá do běžných kategorií? Nabízím individuální 
-                konzultace pro speciální případy. Hodinová sazba je 2 500 Kč.
+                Ne všechno se vejde do škatulek. Někdy potřebujete jen hodinovou konzultaci, 
+                druhý názor nebo vysvětlení dokumentu. Tyhle služby platíte přímo – 2 500 Kč za hodinu.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
@@ -98,11 +98,11 @@ const OtherServicesPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Co mohu pro vás udělat
+              S čím vám můžu pomoct
             </h2>
             <p className="text-muted-foreground text-lg">
-              Finanční svět je složitý a ne vše se vejde do kategorií. Pokud máte specifickou 
-              otázku nebo potřebujete pomoc s nestandardní situací, jsem tu pro vás.
+              Finanční svět je složitý. Pokud máte konkrétní otázku nebo problém, 
+              který nespadá do běžných kategorií, jsem tu pro vás.
             </p>
           </AnimatedSection>
 
@@ -134,26 +134,27 @@ const OtherServicesPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-                Transparentní ceny
+                Jak to funguje s cenou
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Na rozdíl od standardních služeb, kde jsem placen poskytovateli finančních 
-                  produktů, za individuální konzultace si účtuji hodinovou sazbu 2 500 Kč.
+                  U běžných služeb (hypotéky, pojištění, investice) mě platí poskytovatelé produktů. 
+                  Vy neplatíte nic. Ale tyhle speciální konzultace jsou jiné – tady pracuju 
+                  čistě pro vás, bez vazby na produkty.
                 </p>
                 <p>
-                  Tato cena pokrývá veškerý čas strávený přípravou i samotnou konzultací. 
-                  Před schůzkou se dohodneme na předpokládaném rozsahu a celkové ceně.
+                  Proto si účtuju hodinovou sazbu 2 500 Kč. Zahrnuje přípravu i samotnou schůzku. 
+                  Předem se dohodneme na rozsahu, abyste věděli, kolik to bude stát.
                 </p>
                 <p>
                   Pokud se během konzultace ukáže, že potřebujete některou z mých standardních 
-                  služeb (hypotéku, pojištění, investice), přejdeme na běžný model bez přímé platby.
+                  služeb (třeba hypotéku nebo pojištění), přejdeme na běžný model bez přímé platby.
                 </p>
               </div>
               
               <div className="mt-8 p-6 rounded-xl bg-primary/5 border border-primary/20">
                 <div className="text-3xl font-bold text-primary mb-2">2 500 Kč / hodina</div>
-                <p className="text-muted-foreground">včetně přípravy a follow-up komunikace</p>
+                <p className="text-muted-foreground">včetně přípravy a následné komunikace</p>
               </div>
             </AnimatedSection>
 
@@ -161,7 +162,7 @@ const OtherServicesPage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -187,14 +188,14 @@ const OtherServicesPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Každý, kdo potřebuje profesionální radu</li>
-                    <li>• Ti, kdo řeší nestandardní situaci</li>
-                    <li>• Lidé, kteří chtějí druhý názor</li>
-                    <li>• Ti, kdo se chtějí naučit o financích</li>
-                    <li>• Každý, kdo oceňuje osobní přístup</li>
+                    <li>• Máte konkrétní otázku, na kterou chcete odpověď</li>
+                    <li>• Někdo vám něco nabídl a chcete druhý názor</li>
+                    <li>• Nerozumíte smlouvě nebo dokumentu</li>
+                    <li>• Chcete se naučit o financích</li>
+                    <li>• Řešíte nestandardní situaci</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -205,12 +206,12 @@ const OtherServicesPage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo hledají bezplatné poradenství</li>
-                    <li>• Pro ty, kdo potřebují právní služby</li>
-                    <li>• Pro ty, kdo hledají účetní nebo daňového poradce</li>
+                    <li>• Hledáte bezplatné poradenství</li>
+                    <li>• Potřebujete právní služby (to dělá advokát)</li>
+                    <li>• Hledáte účetního nebo daňového poradce</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -227,8 +228,8 @@ const OtherServicesPage = () => {
               Potřebujete poradit?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Napište mi, o čem byste chtěli konzultovat, a domluvíme se na termínu 
-              a ceně. Žádný problém není příliš malý nebo velký.
+              Napište mi, o čem byste chtěli konzultovat. Dohodneme se na termínu 
+              a ceně. Žádný problém není příliš malý ani příliš velký.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>

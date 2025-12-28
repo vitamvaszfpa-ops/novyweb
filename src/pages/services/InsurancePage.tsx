@@ -11,45 +11,45 @@ const insuranceTypes = [
   {
     icon: Heart,
     title: "Životní pojištění",
-    description: "Ochrana rodiny a příjmu v případě nemoci, úrazu nebo úmrtí. Zajistěte finanční stabilitu pro vaše blízké.",
+    description: "Co se stane s rodinou, když vypadnete z práce kvůli nemoci nebo úrazu? Životní pojištění zajistí, že hypotéka a účty se zaplatí, i když vy nebudete moct.",
   },
   {
     icon: Building2,
-    title: "Majetkové pojištění",
-    description: "Komplexní ochrana nemovitostí, domácností a cenností. Pojištění proti živlům, krádeži i vandalismu.",
+    title: "Pojištění majetku",
+    description: "Dům, byt, chata, vybavení. Co když přijde povodeň, požár nebo zloději? Správné pojištění znamená, že nebudete řešit, z čeho to zaplatíte.",
   },
   {
     icon: Car,
     title: "Pojištění vozidel",
-    description: "Povinné ručení a havarijní pojištění. Srovnání nabídek od více pojišťoven pro nejlepší cenu.",
+    description: "Povinné ručení musíte mít. Havarijko se hodí. Ale za kolik? Srovnám nabídky od víc pojišťoven a najdu vám nejlepší poměr cena/výkon.",
   },
   {
     icon: Users,
-    title: "Firemní pojištění",
-    description: "Ochrana podnikání - odpovědnost, majetek, přerušení provozu, kybernetická rizika.",
+    title: "Pojištění pro firmy",
+    description: "Podnikáte? Odpovědnost za škodu, majetek firmy, přerušení provozu. Jedna chyba může firmu položit – pojištění vás ochrání.",
   },
   {
     icon: Plane,
     title: "Cestovní pojištění",
-    description: "Krátkodobé i celoroční pojištění na cesty. Léčebné výlohy, storno, odpovědnost za škodu.",
+    description: "Jedete na dovolenou nebo pracovně do zahraničí? Léčebné výlohy v cizině stojí majlant. Za pár korun máte klid.",
   },
 ];
 
 const benefits = [
-  "Nezávislé srovnání od 15+ pojišťoven",
-  "Individuální analýza vašich potřeb",
-  "Pomoc s likvidací pojistných událostí",
-  "Pravidelná revize a optimalizace",
-  "Kompletní servis bez starostí",
-  "Dlouhodobá péče a podpora",
+  "Srovnání od 15+ pojišťoven – vyberu to nejlepší",
+  "Projdu vaše stávající smlouvy a řeknu, co je zbytečné",
+  "Když se něco stane, pomůžu s vyřízením pojistky",
+  "Jednou ročně zkontroluju, jestli to pořád sedí",
+  "Vysvětlím vám, co pojištění kryje a co ne",
+  "18 let praxe – vím, co pojišťovny nerady platí",
 ];
 
 const InsurancePage = () => {
   return (
     <Layout>
       <SEO
-        title="Pojištění Žďár nad Sázavou - Životní, majetkové, firemní pojištění | ZFP Group"
-        description="Komplexní pojištění pro jednotlivce, rodiny i firmy na Vysočině. Životní, majetkové, firemní, cestovní pojištění. Nezávislé srovnání od 15+ pojišťoven. Konzultace zdarma."
+        title="Pojištění Žďár nad Sázavou | Životní, majetkové, firemní | Roman Hájek"
+        description="Potřebujete pojištění ve Žďáře nad Sázavou? Za 18 let vím, jak pojišťovny fungují. Srovnám nabídky, najdu mezery ve vašem krytí a pomůžu s pojistkou. Konzultace zdarma."
         canonical="/sluzby/pojisteni"
       />
       <BreadcrumbSchema
@@ -77,13 +77,14 @@ const InsurancePage = () => {
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-                Komplexní pojištění pro jednotlivce, rodiny i firmy. Srovnávám nabídky od více než 15 pojišťoven 
-                a vybírám to nejlepší pro vaši situaci. Ochrana, na kterou se můžete spolehnout.
+                Pojištění by mělo fungovat, když ho potřebujete – ne vás překvapit výlukami 
+                drobným písmem. Za 18 let jsem viděl dost případů, kdy lidé zjistili až při 
+                škodě, že jejich pojistka nic nekryje. Proto to dělám jinak.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="hero" size="xl" className="btn-glow" asChild>
                   <Link to="/kontakt">
-                    Nezávazná konzultace
+                    Chci zkontrolovat pojištění
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -98,11 +99,11 @@ const InsurancePage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Typy pojištění, které nabízím
+              Jaké pojištění řeším
             </h2>
             <p className="text-muted-foreground text-lg">
-              Každý člověk i firma má jiné potřeby. Proto nabízím široké spektrum pojištění, 
-              které přizpůsobím přesně vaší situaci.
+              Každý člověk i rodina je jiná. Proto nejdřív zjistím, co skutečně potřebujete, 
+              a pak teprve hledám produkty. Ne naopak.
             </p>
           </AnimatedSection>
 
@@ -134,22 +135,23 @@ const InsurancePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-                Jak pojištění funguje?
+                Proč pojištění řešit se mnou?
               </h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Pojištění je smlouva mezi vámi a pojišťovnou. Platíte pravidelné pojistné 
-                  a v případě pojistné události vám pojišťovna vyplatí dohodnutou částku 
-                  nebo uhradí vzniklou škodu.
+                  Pojišťovací agent vám prodá to, co jeho pojišťovna nabízí. I kdyby to pro vás 
+                  nebylo ideální. Já pracuju s více než 15 pojišťovnami a vybírám to, co sedí 
+                  právě vám.
                 </p>
                 <p>
-                  Mou rolí je najít pro vás optimální poměr mezi cenou a kvalitou krytí. 
-                  Nezávisle porovnávám nabídky od více pojišťoven a doporučím řešení, 
-                  které nejlépe odpovídá vašim potřebám a rozpočtu.
+                  Hodně lidí má pojištění, které nepotřebují, a chybí jim to, co potřebují. 
+                  Projdu s vámi všechny smlouvy a řeknu vám na rovinu, co je zbytečné a co 
+                  vám naopak chybí.
                 </p>
                 <p>
-                  V případě pojistné události vám pomohu s celým procesem likvidace – 
-                  od nahlášení přes dokumentaci až po vyplacení pojistného plnění.
+                  A když se něco stane? Nebudete na to sami. Pomůžu vám s nahlášením škody, 
+                  s dokumentací i s komunikací s pojišťovnou. Vím, jak to funguje, a nenechám 
+                  vás odejít s prázdnou.
                 </p>
               </div>
             </AnimatedSection>
@@ -158,7 +160,7 @@ const InsurancePage = () => {
               <Card variant="premium" className="p-8">
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-6">
-                    Co získáte spoluprací se mnou
+                    Co ode mě dostanete
                   </h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, i) => (
@@ -184,14 +186,14 @@ const InsurancePage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <CheckCircle className="w-6 h-6 text-primary" />
-                    Pro koho je služba vhodná
+                    Pro koho je to
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Rodiny, které chtějí ochránit své blízké</li>
-                    <li>• Majitelé nemovitostí a cenných předmětů</li>
-                    <li>• Podnikatelé a firmy</li>
-                    <li>• Lidé s hypotékou či úvěrem</li>
-                    <li>• Každý, kdo chce mít klid a jistotu</li>
+                    <li>• Máte rodinu a chcete ji zabezpečit</li>
+                    <li>• Vlastníte nemovitost (dům, byt, chatu)</li>
+                    <li>• Podnikáte a potřebujete pojistit firmu</li>
+                    <li>• Máte hypotéku a banka vyžaduje pojištění</li>
+                    <li>• Chcete si zkontrolovat, jestli neplatíte zbytečně</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -202,12 +204,12 @@ const InsurancePage = () => {
                 <CardContent className="p-0">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center text-sm">✕</span>
-                    Pro koho služba není
+                    Pro koho to není
                   </h3>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li>• Pro ty, kdo hledají pouze nejlevnější pojištění bez ohledu na kvalitu</li>
-                    <li>• Pro ty, kdo nechtějí investovat čas do analýzy svých potřeb</li>
-                    <li>• Pro ty, kdo preferují řešení přes internet bez osobního kontaktu</li>
+                    <li>• Hledáte jen nejlevnější pojištění bez ohledu na kvalitu</li>
+                    <li>• Nechcete trávit čas analýzou vašich potřeb</li>
+                    <li>• Preferujete vyřídit vše online bez osobního kontaktu</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -221,16 +223,16 @@ const InsurancePage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6 font-bold">
-              Připraveni ochránit to, na čem záleží?
+              Víte, co vaše pojištění skutečně kryje?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Domluvte si bezplatnou konzultaci a společně najdeme optimální pojištění 
-              pro vaši situaci. První schůzka je vždy zdarma a nezávazná.
+              Přineste mi svoje smlouvy a za hodinu budete vědět, jestli jste správně 
+              pojištění. Schůzka je zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" className="btn-glow" asChild>
                 <Link to="/kontakt">
-                  Mám zájem o konzultaci
+                  Chci zkontrolovat pojištění
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
