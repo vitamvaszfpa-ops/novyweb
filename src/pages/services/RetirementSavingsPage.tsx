@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PiggyBank, CheckCircle, ArrowRight, Gift, TrendingUp, Calculator, Building2, Calendar } from "lucide-react";
+import { PiggyBank, CheckCircle, ArrowRight, Gift, TrendingUp, Calculator, Building2, Calendar, RefreshCw } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/StructuredData";
@@ -11,7 +11,7 @@ const savingsFeatures = [
   {
     icon: Gift,
     title: "Státní příspěvek",
-    description: "Stát vám přidá až 2 760 Kč ročně. Zadarmo. Stačí spořit 1 000 Kč měsíčně a máte maximum. Kde jinde dostanete 23% výnos bez rizika?",
+    description: "Stát vám přidá až 2 760 Kč ročně. Zadarmo. Stačí spořit 1 700 Kč měsíčně a máte maximum. Kde jinde dostanete 20% výnos bez rizika?",
   },
   {
     icon: Building2,
@@ -21,7 +21,7 @@ const savingsFeatures = [
   {
     icon: Calculator,
     title: "Daňové výhody",
-    description: "Odečtěte si až 48 000 Kč z daní ročně. Při sazbě 23 % to je přes 11 000 Kč zpátky. Peníze, které byste jinak dali státu.",
+    description: "Odečtěte si až 48 000 Kč z daní ročně. Při sazbě 15 % to je 7 200 Kč zpátky. Peníze, které byste jinak dali státu.",
   },
   {
     icon: TrendingUp,
@@ -32,6 +32,11 @@ const savingsFeatures = [
     icon: Calendar,
     title: "Flexibilita",
     description: "Můžete přerušit, změnit částku, v nouzi i vybrat. Není to past – jen chytrý nástroj pro budoucnost.",
+  },
+  {
+    icon: RefreshCw,
+    title: "DPS vs. transformovaný fond",
+    description: "Máte starý transformovaný fond? Garantuje vám nulu, ale výnosy sotva pokryjí inflaci. Přechod na DPS znamená vyšší potenciál zhodnocení. Poradím, jestli se vám vyplatí.",
   },
 ];
 
